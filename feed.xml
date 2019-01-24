@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Brain Dump</title>
+    <atom:link href="https://hamidsafdari.github.io/feed.xml" rel="self" type="application/rss+xml"></atom:link>
+    <link>https://hamidsafdari.github.io</link>
+    <description></description>
+    <pubDate>Thu, 24 Jan 2019 04:30:00 +0530</pubDate>
+    <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
+    <language>en</language>
+    <item>
+      <title>لینکس،‌ بهشت مالتی میدیا: ffmpeg</title>
+      <link>https://hamidsafdari.github.io/articles/ffmpeg-rocks/</link>
+      <pubDate>Thu, 24 Jan 2019 04:30:00 +0530</pubDate>
+      <guid isPermaLink="true">https://hamidsafdari.github.io/articles/ffmpeg-rocks/</guid>
+      <author>Hamid Safdari</author>
+      <description>&lt;p&gt;در سیستم عاملی مثل ویندوز یکی از کارهایی که به نظر مشکل می آید کار با فایل های مالتی میدیا است. شاید بخواهید یک فایل صوتی را به فرمتی تبدیل کنید که بتوانید آن را با موبایلتان پخش کنید. مثلا از &lt;code&gt;ogg&lt;/code&gt; به &lt;code&gt;mp3&lt;/code&gt;. اگر از ویندوز استفاده می کنید مجبور خواهید بود ابزاری را از اینترت دانلود کنید. در آن صورت هم این ابزار به شما چند قابلیت ساده می دهد و برای قابلیت های بیشتر شاید مجبور باشید نسخهٔ‌ premium برنامه را بخرید. اگر حوصله تایپ کردن چند خط در کمند لاین (&lt;code&gt;command line&lt;/code&gt;) را داشته باشید لینکس ابزاری دارد که می تواند پاسخ گوی تقریباً تمامی نیازهای مالتی میدیای شما باشد.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;این ابزار عبارت است از &lt;code&gt;ffmpeg&lt;/code&gt;. شاید قبلا این نام را شنیده باشید اما به احتمال زیاد نمی دانستید که این برنامه چه قابلیت هایی دارد. چند تا از قابلیت هایی که &lt;code&gt;ffmpeg&lt;/code&gt; به شما می دهد عبارت اند از:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;تبدیل از یک فرمت مالتی میدیا به فرمت دیگر&lt;/li&gt;
+&lt;li&gt;جدا کردن صدا و تصویر از فایل ویدیو&lt;/li&gt;
+&lt;li&gt;کوتاه کردن فایل مالتی میدیا&lt;/li&gt;
+&lt;li&gt;یک جا کردن (&lt;code&gt;merging&lt;/code&gt;) صدا و تصویر&lt;/li&gt;
+&lt;li&gt;تهیه اسکرین شات از ویدیو&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sync&lt;/code&gt; کردن ویدیو و صوت&lt;/li&gt;
+&lt;li&gt;نمایش ویدیو از وبکم (webcam)&lt;/li&gt;
+&lt;li&gt;فیلم گرفتن از صفحهٔ نمایش (screen capture)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;استفاده از &lt;code&gt;ffmpeg&lt;/code&gt; دو مزیت مهم دارد. اول اینکه برای انجام اکثر این کارها فقط به یک دستور &lt;code&gt;command&lt;/code&gt; نیاز دارید. فقط باید نام فایل را ذکر کنید و بدانید چه پارامترهایی را باید به &lt;code&gt;ffmpeg&lt;/code&gt; بدهید. نکته دوم اینکه &lt;code&gt;ffmpeg&lt;/code&gt; از حجم بسیار کمی برخوردار است. &lt;code&gt;ffmpeg&lt;/code&gt; به صورت &lt;code&gt;archive&lt;/code&gt; کمتر از &lt;code&gt;9MB&lt;/code&gt; حجم دارد. فرض کنید بعد از نصب حداکثر به &lt;code&gt;30MB&lt;/code&gt; فضا نیاز داشته باشد. اگر از یک محیط گرافیکی کم حجم مثل &lt;code&gt;i3wm&lt;/code&gt; استفاده کنید حداکثر &lt;code&gt;100MB RAM&lt;/code&gt; را اشغال می کند. پس اگر سیستم شما &lt;code&gt;4GB RAM&lt;/code&gt; داشته باشد برایتان چیزی حدود &lt;code&gt;4096 - 150 = 3946 MB&lt;/code&gt; باقی می ماند.&lt;/p&gt;
+&lt;h3 id=&quot;-&quot;&gt;تبدیل فایل مالتی میدیا از یک فرمت به فرمت دیگر&lt;/h3&gt;
+&lt;p&gt;برای تبدیل کردن یک فایل مالتی میدیا از یک فرمت به فرمت دیگر می توانید از دستور زیر استفاده کنید. توجه داشته باشید تبدیل فرمت یکی از کارهایی است که وقت گیر است و به حداکثر توان کمپیوتر شما نیاز دارد&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;ffmpeg -i inputfile.webm -f mp4 -c:v libx264 -preset ultrafast -acodec aac -vf scale=-1:1080 -r 25 -hide_banner &lt;span class=&quot;string&quot;&gt;&quot;output.mp4&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;-&quot;&gt;توضیح&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;i-&lt;/code&gt; فایل دخولی را مشخص می کند&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;f-&lt;/code&gt; فرمت فایل نهایی است&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;v:c-&lt;/code&gt; مشخص می کند برای ویدیو از چه کدکی &lt;code&gt;codec&lt;/code&gt; استفاده شود&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;preset-&lt;/code&gt; مشخص کننده تنظیمات پیش فرضی است که در سرعت و کیفیت فایل خروجی نقش دارند&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;acodec-&lt;/code&gt; مشخص می کند برای صدای فایل خروجی از چه کدکی استفاده شود&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;vf-&lt;/code&gt; مخفف ‍&lt;code&gt;video filter&lt;/code&gt; هست&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;scale&lt;/code&gt; فیلتری است که به ‍&lt;code&gt;vf-&lt;/code&gt; داده شده و ابعاد فایل خروجی را تنظیم می کند. &lt;code&gt;1:1080-&lt;/code&gt; یعنی ارتفاع ویدیو &lt;code&gt;1080&lt;/code&gt; باشد و عرض آن مناسب با ارتفاع حساب شود&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;25 r-&lt;/code&gt; تعداد فریم ها در هر ثانیه را مشخص می کند&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hide_banner-&lt;/code&gt; از &lt;code&gt;log&lt;/code&gt; زیاد خودداری می کند&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;output.mp4&lt;/code&gt; نام فایل خروجی است&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;-&quot;&gt;جدا کردن صدا و تصویر از یک فایل ویدیو&lt;/h3&gt;
+&lt;p&gt;برای &lt;code&gt;extract&lt;/code&gt; کردن (جدا کردن)‌ صوت از ویدیو می توانید از این دستور استفاده کنید&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;ffmpeg -i video.mp4 -vn -c:a copy output-audio.aac&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;-&quot;&gt;توضیح&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;vn-&lt;/code&gt; یعنی &lt;code&gt;no video&lt;/code&gt; یا در فایل خروجی ویدیو نباشد&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;c:a-&lt;/code&gt; کدک فایل صوتی را مشخص می کند که اینجا گفته ایم فقط کاپی شود&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;همینطور اگر خواستیم ویدیو را از صوت جدا کنیم می توانیم به جای &lt;code&gt;-vn&lt;/code&gt; از &lt;code&gt;-an&lt;/code&gt; استفاده کنیم.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;سوال:‌ چطور بفهمیم یک فایل چه فرمت هایی را در خود جای داده است؟&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;فرمت های مختلف فایل های ویدیو مثل صندوقی برای فایل های ویدیو و صوت می باشند. به این صندوق container گفته می شود. هر فرمت ویدیو فقط قابلیت نگهداری فرمت های مشخصی را دارد. اگر می خواهید بدانید که فایل ویدیویی که در اختیار دارید چه فرمتی از ویدیو و صوت را در خود جای داده است می توانید از عبارت زیر استفاده کنید:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;ffprobe filename.mp4&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;ffprobe&lt;/code&gt; ابزاری است که همراه با &lt;code&gt;ffmpeg&lt;/code&gt; روی سیستم شما نصب می شود و نیازی به نصب جداگانهٔ آن ندارید. خروجی این دستور به این صورت خواهد بود:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;ffprobe version ...
+  ...
+Input &lt;span class=&quot;comment&quot;&gt;#0, mov,mp4,m4a,3gp,3g2,mj2, from 'filename.mp4':&lt;/span&gt;
+  Metadata:
+    ...
+  Duration: 00:00:40.02, start: 0.000000, bitrate: 282 kb/s
+    Stream &lt;span class=&quot;comment&quot;&gt;#0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 1280x720 ...&lt;/span&gt;
+    ...
+    Stream &lt;span class=&quot;comment&quot;&gt;#0:1(und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s (default)&lt;/span&gt;
+    ...&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;از خروجی بالا می توان فهمید که فایل مورد نظر صوت را با فرمت &lt;code&gt;aac&lt;/code&gt; در خود جای داده است.&lt;/p&gt;
+&lt;h3 id=&quot;-&quot;&gt;کوتاه کردن فایل مالتی میدیا&lt;/h3&gt;
+&lt;p&gt;برای جدا کردن بخشی از یک فایل ویدیو و یا صوت می توانید از یکی از عبارت های زیر استفاده کنید. عبارت اول از ثانیهٔ‌ دهم تا شش ثانیه بعد از آن و دومی از ثانیهٔ‌ دهم تا ثانیهٔ شانزدهم فایل را جدا می کنند. هر دو عین کار را انجام می دهند اما به دو صورت متفاوت نوشته شده اند&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;ffmpeg -ss 10 -t 6 -i input.mp3 output.mp3
+ffmpeg -ss 10 -to 16 -i input.mp3 output.mp3&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;-merging-&quot;&gt;یک جا کردن (merging) صدا و تصویر&lt;/h3&gt;
+&lt;p&gt;نام فایل ها را با فرمت زیر در یک فایل متنی بنویسید. اگر نام فایل هایتان دارای جای خالی (&lt;code&gt;space‍‍&lt;/code&gt;) و یا کرکترهای مخصوص هستند بهتر است نام فایل ها را داخل علامهٔ &lt;code&gt;&amp;quot;&lt;/code&gt; قرار دهید.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;file &lt;span class=&quot;string&quot;&gt;&quot;file001.mp4&quot;&lt;/span&gt;
+file &lt;span class=&quot;string&quot;&gt;&quot;file002.avi&quot;&lt;/span&gt;
+file &lt;span class=&quot;string&quot;&gt;&quot;file003.mkv&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;بعد از به وجود آوردن فایل بالا با این کمند (دستور/&lt;code&gt;command&lt;/code&gt;) می توانید آنها را &lt;code&gt;merge&lt;/code&gt; کنید&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;ffpmeg -f concat -safe 0 -i files.txt -c copy output.mp4&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;-&quot;&gt;توضیح&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;0 safe-&lt;/code&gt; وقتی استفاده می شود که نام فایل ها دارای کرکتر &lt;code&gt;space&lt;/code&gt; (و یا کرکترهای مخصوص) باشند&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;-&quot;&gt;تهیه اسکرین شات از ویدیو&lt;/h3&gt;
+&lt;p&gt;شاید بعضی وقت ها نیاز داشته باشید ویدیویتان را به یک سری عکس تبدیل کنید. مثلاً‌ اگر می خواهید از ویدیویتان یک &lt;code&gt;presentation&lt;/code&gt; تهیه کنید مجبورید تمام ویدیو را ببینید و هر جایی که مرتبط با کارتان بود &lt;code&gt;pause&lt;/code&gt; کنید و یک عکس از آن بگیرید. با عبارت زیر می توانید ویدیویتان را به یک سری عکس با فاصله زمانی یک ثانیه تبدیل کنید. وقتی کار این دستور تمام شد می توانید محل ذخیره عکس ها را باز کنید و عکس هایی که به درد نمی خورند را حذف کنید. اگر نیاز دارید عکس ها را با فاصلهٔ زمانی کمتری بگیرید مثلا &lt;code&gt;4&lt;/code&gt; عکس در یک ثانیه (یا یک عکس هر &lt;code&gt;0.25&lt;/code&gt; ثانیه) می توانید به جای &lt;code&gt;fps=1&lt;/code&gt; بنویسید &lt;code&gt;fps=1/4&lt;/code&gt; و یا اگر می خواهید بین هر عکس &lt;code&gt;5&lt;/code&gt; ثانیه فاصله باشد می توانید بنویسید &lt;code&gt;fps=5&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;ffmpeg -i video.mp4 -vf fps=1 &lt;span class=&quot;string&quot;&gt;&quot;screenshots/images_%06d.png&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;-&quot;&gt;توضیح&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;fps&lt;/code&gt; مخفف ‍&lt;code&gt;frames per second&lt;/code&gt; است و مشخص می کند که هر چند فریم یک عکس گرفته شود&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;i-&lt;/code&gt; برای مشخص کردن فایل دخولی است&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;%06d&lt;/code&gt; فرمت نام عکس ها را مشخص می کند. &lt;code&gt;06d&lt;/code&gt; یعنی به نام هر عکس یک عدد شش رقمی که با صفر شروع می شود اضافه شود&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;sync-&quot;&gt;sync کردن ویدیو و صوت&lt;/h3&gt;
+&lt;p&gt;اگر یک فایل ویدیو در اختیار دارید که صوت و تصویر آن با تفاوت زمانی پخش می شوند (&lt;code&gt;i.e. the audio and video are out of sync&lt;/code&gt;) می توانید با دستور زیر ویدیویتان را اصلاح کنید&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;ffmpeg.exe -i &lt;span class=&quot;string&quot;&gt;&quot;movie.mp4&quot;&lt;/span&gt; -itsoffset 3.84 -i &lt;span class=&quot;string&quot;&gt;&quot;movie.mp4&quot;&lt;/span&gt; -map 0:v -map 1:a -c copy &lt;span class=&quot;string&quot;&gt;&quot;movie-audio-delayed.mp4&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;-&quot;&gt;توضیح&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;itoffset-&lt;/code&gt; مخفف ‍&lt;code&gt;input timestamp offset&lt;/code&gt; است و مشخص می کند که شروع فایل دخولی از چه زمانی باشد. این پارامتر روی فایل دخولی که بعد از آن می آید اعمال می شود. یعنی در دستور بالا &lt;code&gt;movie.mp4&lt;/code&gt; دوم از ثانیهٔ &lt;code&gt;3.84&lt;/code&gt; شروع می شود&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;map 0:v -map 1:a-&lt;/code&gt; یعنی ویدیو را از فایل اول و صدا را از فایل دوم بگیر (که با تأخیر &lt;code&gt;3.84&lt;/code&gt; ثانیه شروع می شود). در اینجا فایل اول و دوم ما یکی هستند پس &lt;code&gt;movie.mp4&lt;/code&gt; دو بار تکرار شده است&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;-webcam-&quot;&gt;نمایش ویدیو از وبکم (webcam)&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;ffmpeg -f x11grab -r 30 -s 1920x1080 -i :0.0  out.mp4&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;-&quot;&gt;توضیح&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;f x11grab-&lt;/code&gt; نام فرمتی است که می خواهیم &lt;code&gt;ffmpeg&lt;/code&gt; از آن استفاده کند&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;r-&lt;/code&gt; تعداد فریم ها در ثانیه را مشخص می کند&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;s-&lt;/code&gt; ابعاد ویدیو را مشخص می کند. این ابعاد باید مساوی یا کمتر از ابعاد صفحه نمایش تان باشد. برای پیدا کردن ابعاد صفحه نمایش از &lt;code&gt;command line&lt;/code&gt; می توانید از دستور زیر استفاده کنید&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;xdpyinfo | grep dimensions&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;i-&lt;/code&gt; دخولی را مشخص می کند. در لینکس هر صفحه نمایش یک قیمت داده شده است. برای به دست آوردن این قیمت می توانید از دستور زیر استفاده کنید&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;variable&quot;&gt;$DISPLAY&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;اگر بیشتر از یک صفحه نمایش دارید قیمت هایی را که به هر صفحه نمایش مختص شده را می توانید با ابزار &lt;code&gt;xrandr&lt;/code&gt; به دست بیاورید. &lt;/p&gt;
+&lt;h3 id=&quot;-&quot;&gt;ضبط صدا از مایکروفون&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;ffmpeg -f pulse -i default out.aac&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;-&quot;&gt;توضیح&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;f-&lt;/code&gt; نام فرمتی است که برای ضبط استفاده می کنید. برای مشاهده لیست فرمت هایی که روی سیستم تان نصب شده از &lt;code&gt;ffmpeg -formats&lt;/code&gt; استفاده کنید.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;i-&lt;/code&gt; نام دخولی است. در اینجا دخولی پیش فرض &lt;code&gt;default&lt;/code&gt; سیستم را انتخاب کرده ایم، یعنی مایکروفون تان.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;-&quot;&gt;جمع بندی:‌ ضبط ویدیو از وبکم و صفحه نمایش و صدا از مایکروفون&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# play from the webcam&lt;/span&gt;
+ffplay -f video4linux2 -i /dev/video0 -video_size 320x240 -fflags nobuffer
+&lt;span class=&quot;comment&quot;&gt;# record from the screen&lt;/span&gt;
+ffmpeg -f pulse -ac 2 -i default -f x11grab -r 30 -s 1920x1080 -i :0.0 -vcodec libx264 -preset ultrafast out.mp4&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;توجه داشته باشید که دو دستور بالا را باید در دو &lt;code&gt;shell&lt;/code&gt; جداگانه اجرا کنید.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/articles/ffmpeg-rocks/capture.jpg&quot; alt=&quot;Screen Capture&quot;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;-&quot;&gt;منابع&lt;/h3&gt;
+&lt;div class=&quot;sources&quot;&gt;
+
+&lt;p&gt;  &lt;a href=&quot;https://trac.ffmpeg.org/wiki/Capture/ALSA#Recordaudiofromyourmicrophone&quot;&gt;https://trac.ffmpeg.org/wiki/Capture/ALSA#Recordaudiofromyourmicrophone&lt;/a&gt;
+  &lt;a href=&quot;https://stackoverflow.com/a/22082953/2139684&quot;&gt;https://stackoverflow.com/a/22082953/2139684&lt;/a&gt; 
+  &lt;a href=&quot;https://ffmpeg.org/ffmpeg.html&quot;&gt;https://ffmpeg.org/ffmpeg.html&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+  </channel>
+</rss>
