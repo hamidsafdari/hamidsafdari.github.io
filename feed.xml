@@ -1,142 +1,659 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Brain Dump</title>
+    <title>Brain Offloaded</title>
     <atom:link href="https://hamidsafdari.github.io/feed.xml" rel="self" type="application/rss+xml"></atom:link>
     <link>https://hamidsafdari.github.io</link>
     <description></description>
-    <pubDate>Thu, 24 Jan 2019 04:30:00 +0530</pubDate>
+    <pubDate>Sat, 09 Feb 2019 04:30:00 +0530</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
+    <item>
+      <title>اهمیت استفاده از VCS</title>
+      <link>https://hamidsafdari.github.io/articles/vcs-importance/</link>
+      <pubDate>Sat, 09 Feb 2019 04:30:00 +0530</pubDate>
+      <guid isPermaLink="true">https://hamidsafdari.github.io/articles/vcs-importance/</guid>
+      <author>Hamid Safdari</author>
+      <description>&lt;!DOCTYPE html&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;&quot; xml:lang=&quot;&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=yes&quot; /&gt;
+  &lt;title&gt;Page Title&lt;/title&gt;
+  &lt;style type=&quot;text/css&quot;&gt;
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  &lt;/style&gt;
+  &lt;style type=&quot;text/css&quot;&gt;
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  &lt;/style&gt;
+  &lt;!--[if lt IE 9]&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js&quot;&gt;&lt;/script&gt;
+  &lt;![endif]--&gt;
+  &lt;style&gt;
+    .task-list-item {
+      list-style-type: none;
+    }
+    .task-list-item-checkbox {
+      margin-left: -1.6em;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;nav id=&quot;TOC&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://hamidsafdari.github.io/articles/vcs-importance/#مشکل-کار-با-متن&quot;&gt;مشکل کار با متن&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://hamidsafdari.github.io/articles/vcs-importance/#version-control-system&quot;&gt;Version Control System&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://hamidsafdari.github.io/articles/vcs-importance/#git&quot;&gt;Git&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://hamidsafdari.github.io/articles/vcs-importance/#شروع-کار-با-git&quot;&gt;شروع کار با &lt;code&gt;git&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://hamidsafdari.github.io/articles/vcs-importance/#دیدن-تاریخچه-و-فرق-بین-تغییرها&quot;&gt;دیدن تاریخچه و فرق بین تغییرها&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://hamidsafdari.github.io/articles/vcs-importance/#کار-با-branch&quot;&gt;کار با &lt;code&gt;branch&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://hamidsafdari.github.io/articles/vcs-importance/#استفاده-از-stash&quot;&gt;استفاده از &lt;code&gt;stash&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://hamidsafdari.github.io/articles/vcs-importance/#ایجاد-و-اعمال-patch&quot;&gt;ایجاد و اعمال &lt;code&gt;patch&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://hamidsafdari.github.io/articles/vcs-importance/#آپلود-به-server&quot;&gt;آپلود به &lt;code&gt;server&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+&lt;p&gt;اگر روی پروژه ای کار می‌کنید و با متن سر و کار دارید،‌ فرقی نمی‌کند که تنهایید یا با چند نفر کار می‌کنید، پروژه ای که روی آن کار می کنید خورد است یا کلان،‌ اگر از یک &lt;code&gt;Version Control System&lt;/code&gt; استفاده نمی کنید نه تنها به این معنی است که روش کارتان اشتباه است بلکه از بسیاری چیزها محرومید.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;مشکل-کار-با-متن&quot;&gt;مشکل کار با متن&lt;/h3&gt;
+&lt;p&gt;در کار با متن بالاجبار باید چند دفعه متن‌تان را تغییر بدهید، اشتباهاتتان را اصلاح کنید، قسمت‌هایی را حذف و یا اضافه کنید تا به چیزی که از آن راضی هستید برسید. با این همه تغییر ناچار به جایی می‌رسید که فکر می‌کنید شاید تغییراتتان درست نبوده، یا چیزی را حذف کرده‌اید که حالا به آن نیاز دارید. شاید هم تنها کسی نیستید که روی این متن کار می‌کنید و پس از مدتی باید کارتان را با کار دیگران ادغام کنید.&lt;/p&gt;
+&lt;p&gt;در همهٔ این موارد احتمال اینکه کارتان را از دست بدهید بسیار زیاد است. هر راه حلی هم که برای این مشکل در نظر بگیرید به خوبی استفاده از یک &lt;code&gt;Version Control System (VCS)&lt;/code&gt; نیست. ذخیره کردن متن در &lt;code&gt;VCS&lt;/code&gt; مزایایی دارد که می‌توان منجمله به چند مورد آتی اشاره کرد. اول اینکه چون کارتان روی یک سرور آنلاین ذخیره شده است، حتی اگر کارتان را از دست بدهید همیشه می‌توانید به فایل‌های روی سرور دسترسی داشته باشید. دیگر اینکه همراه با هر فایلی که ذخیره می‌کنید تاریخچهٔ تغییرات آن فایل را هم ذخیره می‌کنید. پس هر وقت از چیزی خوشتان نیامد می‌توانید به نسخه‌های قبلی آن فایل رجوع کنید. ‌در آخر اینکه استفاده از &lt;code&gt;VCS&lt;/code&gt; کار در گروه را برایتان آسان می‌کند.&lt;/p&gt;
+&lt;h3 id=&quot;version-control-system&quot;&gt;Version Control System&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;Version Control System&lt;/code&gt; یا سیستم کنترل نسخه ها مثل ماشین زمانی برای فایل‌های شما است. در اینجا نسخه به یک کاپی از فایل های شما در یک زمان مشخص گفته می شود. مثلاً بعد از چند ساعت فکر می کنید قسمتی از کارتان تکمیل شده و باید تغییرهاتان را جایی ذخیره کنید. به این کاپی از فایل های شما یک نسخه گفته می‌شود. ذخیره کردن فایل ها در &lt;code&gt;VCS&lt;/code&gt; به نام &lt;code&gt;commit&lt;/code&gt; کردن یاد می شود. هر &lt;code&gt;commit&lt;/code&gt; نمایانگر یک نسخه از فایل‌هایتان در یک زمان مشخص است. از ابزارهای مختلف &lt;code&gt;VCS&lt;/code&gt; می‌توان به &lt;code&gt;git&lt;/code&gt;، &lt;code&gt;subversion&lt;/code&gt;، &lt;code&gt;mercury&lt;/code&gt; و &lt;code&gt;bazaar&lt;/code&gt; اشاره کرد. هر یک از این ابزارها خصوصیات منحصر به فرد خود را دارند. یکی از این خصوصیات چگونگی ذخیره فایل‌ها روی سرور است. از این نگاه می‌توان به دو نوع مختلف مرکزی و غیرمرکزی اشاره کرد. در یک &lt;code&gt;VCS&lt;/code&gt; مرکزی یا &lt;code&gt;centralized&lt;/code&gt; هر گاه بخواهید از فایل‌هایتان یک &lt;code&gt;commit&lt;/code&gt; ایجاد کنید باید فایل‌هایتان به سرور آپلود شوند. از این گونه &lt;code&gt;VCS&lt;/code&gt; می‌توان به &lt;code&gt;subversion&lt;/code&gt; اشاره کرد. نقطهٔ مقابل اینگونه &lt;code&gt;VCS&lt;/code&gt; &lt;code&gt;decenralized&lt;/code&gt; است. به این معنی که فایل های شما هم روی فایل سیستم خودتان، هم روی سرور قرار دارد. یک &lt;code&gt;commit&lt;/code&gt; اول روی سیستم شما صورت می‌گیرد و هر وقت خواستید می‌توانید این نسخه را به سرور آپلود کنید. اینگونه &lt;code&gt;VCS&lt;/code&gt; برای سیستم‌هایی که همیشه دسترسی به اینترنت ندارند ایده‌آل است. نمونهٔ مشهور اینگونه &lt;code&gt;VCS&lt;/code&gt; &lt;code&gt;git&lt;/code&gt; است. در این نوشته به معرفی همین ابزار پرداخته می‌شود.&lt;/p&gt;
+&lt;h3 id=&quot;git&quot;&gt;Git&lt;/h3&gt;
+&lt;p&gt;قبل از شروع کار با &lt;code&gt;git&lt;/code&gt; باید با چند مفهوم ساده و اساسی آشنا شویم. نیازی نیست همهٔ این مفاهیم را به خاطر بسپارید. همین که آنها را مرور کنید کافی است.&lt;/p&gt;
+&lt;table&gt;
+&lt;colgroup&gt;
+&lt;col style=&quot;width: 6%&quot; /&gt;
+&lt;col style=&quot;width: 93%&quot; /&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr class=&quot;header&quot;&gt;
+&lt;th&gt;کلمه&lt;/th&gt;
+&lt;th&gt;توضیحات&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&quot;odd&quot;&gt;
+&lt;td&gt;&lt;code&gt;respository&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;به دایرکتوری ای گفته می‌شود که &lt;code&gt;VCS&lt;/code&gt; تغییرات فایل‌ها را در آن دنبال می‌کند.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&quot;even&quot;&gt;
+&lt;td&gt;&lt;code&gt;commit&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;یک نسخه از فایل‌ها است. همراه با هر &lt;code&gt;commit&lt;/code&gt;، زمان آن، شخصی که &lt;code&gt;commit&lt;/code&gt; را انجام داده، یک عنوان و در صورت نیاز توضیحات هم با آن ذخیره می‌شود.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&quot;odd&quot;&gt;
+&lt;td&gt;&lt;code&gt;diff&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;فرق بین دو &lt;code&gt;commit&lt;/code&gt; است. اینکه چه فایل‌هایی تغییر کرده‌اند و این تغییرها در کدام خط ها آورده شده است.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&quot;even&quot;&gt;
+&lt;td&gt;&lt;code&gt;log&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;تاریخچهٔ تغییرها. زمان، نام انجام دهندهٔ‌ &lt;code&gt;commit&lt;/code&gt;، عنوان هر &lt;code&gt;commit&lt;/code&gt; و قیمت &lt;code&gt;hash&lt;/code&gt;. &lt;code&gt;hash&lt;/code&gt; یک قیمت طولانی و منحصر به فرد (یا یگانه) است که &lt;code&gt;git&lt;/code&gt; به هر &lt;code&gt;commit&lt;/code&gt; می‌دهد تا آن را از &lt;code&gt;commit&lt;/code&gt;های دیگر متمایز کند.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&quot;odd&quot;&gt;
+&lt;td&gt;&lt;code&gt;branch&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;branch&lt;/code&gt; یک کاپی مجازی از &lt;code&gt;repository&lt;/code&gt; در یک مقطع زمانی است.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&quot;even&quot;&gt;
+&lt;td&gt;&lt;code&gt;stash&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;محل ذخیرهٔ موقت تغییرها است. مثلاً وقتی می‌خواهید کارتان را نیمه کاره رها کنید و به کار دیگری بپردازید اما نمی‌خواهید تغییرهایتان را از دست بدهید از &lt;code&gt;stash&lt;/code&gt; استفاده می‌کنید.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&quot;odd&quot;&gt;
+&lt;td&gt;&lt;code&gt;patch&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;فرق بین دو &lt;code&gt;commit&lt;/code&gt; به صورت متنی است که &lt;code&gt;git&lt;/code&gt; می‌تواند از آن استفاده کند. مثلاً وقتی نمی‌خواهید کسی به آخرین نسخه از &lt;code&gt;repository&lt;/code&gt; شما دسترسی داشته باشد ولی می‌خواهید فقط یک &lt;code&gt;commit&lt;/code&gt; را به اشتراک بگذارید از &lt;code&gt;patch&lt;/code&gt; استفاده می‌کنید.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&quot;شروع-کار-با-git&quot;&gt;شروع کار با &lt;code&gt;git&lt;/code&gt;&lt;/h4&gt;
+&lt;p&gt;اولین باری که می خواهیم از &lt;code&gt;git&lt;/code&gt; استفاده کنیم باید به &lt;code&gt;git&lt;/code&gt; بگوییم که چی کسی هستیم. برای این کار باید نام و ایمیل خود را &lt;code&gt;set&lt;/code&gt; کنیم.&lt;/p&gt;
+&lt;p&gt;(نکته: خطهایی که با کرکتر &lt;code&gt;$&lt;/code&gt; شروع می‌شوند دستوری را نشان می‌دهند که وارد شده است. خطهای دیگر خروجی دستور اند.)&lt;/p&gt;
+&lt;div class=&quot;sourceCode&quot; id=&quot;cb1&quot;&gt;&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;a class=&quot;sourceLine&quot; id=&quot;cb1-1&quot; title=&quot;1&quot;&gt;$ &lt;span class=&quot;fu&quot;&gt;git&lt;/span&gt; config --global set user.name &lt;span class=&quot;st&quot;&gt;&amp;#39;John Carter&amp;#39;&lt;/span&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb1-2&quot; title=&quot;2&quot;&gt;$ &lt;span class=&quot;fu&quot;&gt;git&lt;/span&gt; config --global set user.email &lt;span class=&quot;st&quot;&gt;&amp;#39;carter.john@gmail.com&amp;#39;&lt;/span&gt;&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;اول یک دایرکتری برای پروژه درست می کنیم&lt;/p&gt;
+&lt;div class=&quot;sourceCode&quot; id=&quot;cb2&quot;&gt;&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;a class=&quot;sourceLine&quot; id=&quot;cb2-1&quot; title=&quot;1&quot;&gt;$ &lt;span class=&quot;fu&quot;&gt;mkdir&lt;/span&gt; -p workspace/secret/project&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb2-2&quot; title=&quot;2&quot;&gt;$ &lt;span class=&quot;bu&quot;&gt;cd&lt;/span&gt; workspace/secret/project&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;یک &lt;code&gt;git repository&lt;/code&gt; برای اولین بار به این صورت شروع می شود&lt;/p&gt;
+&lt;div class=&quot;sourceCode&quot; id=&quot;cb3&quot;&gt;&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;a class=&quot;sourceLine&quot; id=&quot;cb3-1&quot; title=&quot;1&quot;&gt;$ &lt;span class=&quot;fu&quot;&gt;git&lt;/span&gt; init .&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb3-2&quot; title=&quot;2&quot;&gt;&lt;span class=&quot;ex&quot;&gt;Initialized&lt;/span&gt; empty Git repository in /home/barsoom/workspace/secret/project&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;حالا یک فایل ایجاد می کنیم و داخل آن چیزی می نویسیم&lt;/p&gt;
+&lt;div class=&quot;sourceCode&quot; id=&quot;cb4&quot;&gt;&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;a class=&quot;sourceLine&quot; id=&quot;cb4-1&quot; title=&quot;1&quot;&gt;$ &lt;span class=&quot;fu&quot;&gt;touch&lt;/span&gt; a.txt&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb4-2&quot; title=&quot;2&quot;&gt;$ &lt;span class=&quot;bu&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;st&quot;&gt;&amp;#39;I am John Carter from Barsoom&amp;#39;&lt;/span&gt; &lt;span class=&quot;op&quot;&gt;&amp;gt;&lt;/span&gt; a.txt&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb4-3&quot; title=&quot;3&quot;&gt;$ &lt;span class=&quot;fu&quot;&gt;cat&lt;/span&gt; a.txt&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb4-4&quot; title=&quot;4&quot;&gt;&lt;span class=&quot;ex&quot;&gt;I&lt;/span&gt; am John Carter from Barsoom&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;قبل از &lt;code&gt;commit&lt;/code&gt; کردن فایل ها باید آنها را به &lt;code&gt;repository&lt;/code&gt; اضافه کنیم (در واقع فایل‌ها به مکان &lt;code&gt;staging&lt;/code&gt; اضافه می‌شوند)&lt;/p&gt;
+&lt;div class=&quot;sourceCode&quot; id=&quot;cb5&quot;&gt;&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;a class=&quot;sourceLine&quot; id=&quot;cb5-1&quot; title=&quot;1&quot;&gt;$ &lt;span class=&quot;fu&quot;&gt;git&lt;/span&gt; add .&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;برای هر &lt;code&gt;commit&lt;/code&gt; باید یک عنوان (و یا پیام) بنویستم. نوشتن عنوان اجباری است و بدون آن، &lt;code&gt;git&lt;/code&gt; به ما اخطار می دهد.&lt;/p&gt;
+&lt;div class=&quot;sourceCode&quot; id=&quot;cb6&quot;&gt;&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;a class=&quot;sourceLine&quot; id=&quot;cb6-1&quot; title=&quot;1&quot;&gt;$ &lt;span class=&quot;fu&quot;&gt;git&lt;/span&gt; commit -m &lt;span class=&quot;st&quot;&gt;&amp;#39;announcing myself&amp;#39;&lt;/span&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb6-2&quot; title=&quot;2&quot;&gt;[&lt;span class=&quot;ex&quot;&gt;master&lt;/span&gt; (root-commit) &lt;span class=&quot;ex&quot;&gt;e7ee941&lt;/span&gt;] announcing myself&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb6-3&quot; title=&quot;3&quot;&gt;&lt;span class=&quot;ex&quot;&gt;1&lt;/span&gt; file changed, 1 insertion(+)&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb6-4&quot; title=&quot;4&quot;&gt;&lt;span class=&quot;ex&quot;&gt;create&lt;/span&gt; mode 100644 a.txt&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id=&quot;دیدن-تاریخچه-و-فرق-بین-تغییرها&quot;&gt;دیدن تاریخچه و فرق بین تغییرها&lt;/h4&gt;
+&lt;p&gt;برای وضعیت فعلی تغییرات در دایرکتری فعلی از دستور &lt;code&gt;status&lt;/code&gt; استفاده می‌کنیم&lt;/p&gt;
+&lt;div class=&quot;sourceCode&quot; id=&quot;cb7&quot;&gt;&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;a class=&quot;sourceLine&quot; id=&quot;cb7-1&quot; title=&quot;1&quot;&gt;$ &lt;span class=&quot;fu&quot;&gt;git&lt;/span&gt; status&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb7-2&quot; title=&quot;2&quot;&gt;&lt;span class=&quot;ex&quot;&gt;On&lt;/span&gt; branch master&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb7-3&quot; title=&quot;3&quot;&gt;&lt;span class=&quot;ex&quot;&gt;Untracked&lt;/span&gt; files:&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb7-4&quot; title=&quot;4&quot;&gt;  &lt;span class=&quot;kw&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ex&quot;&gt;use&lt;/span&gt; &lt;span class=&quot;st&quot;&gt;&amp;quot;git add &amp;lt;file&amp;gt;...&amp;quot;&lt;/span&gt; to include in what will be committed&lt;span class=&quot;kw&quot;&gt;)&lt;/span&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb7-5&quot; title=&quot;5&quot;&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb7-6&quot; title=&quot;6&quot;&gt;        &lt;span class=&quot;ex&quot;&gt;the_blue_light.txt&lt;/span&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb7-7&quot; title=&quot;7&quot;&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb7-8&quot; title=&quot;8&quot;&gt;&lt;span class=&quot;ex&quot;&gt;nothing&lt;/span&gt; added to commit but untracked files present (use &lt;span class=&quot;st&quot;&gt;&amp;quot;git add&amp;quot;&lt;/span&gt; to track)&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;برای دیدن تاریخچهٔ &lt;code&gt;commit&lt;/code&gt; هایی که انجام داده ایم می توانیم از &lt;code&gt;git log&lt;/code&gt; استفاده کنیم&lt;/p&gt;
+&lt;div class=&quot;sourceCode&quot; id=&quot;cb8&quot;&gt;&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;a class=&quot;sourceLine&quot; id=&quot;cb8-1&quot; title=&quot;1&quot;&gt;$ &lt;span class=&quot;fu&quot;&gt;git&lt;/span&gt; log&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb8-2&quot; title=&quot;2&quot;&gt;&lt;span class=&quot;ex&quot;&gt;commit&lt;/span&gt; e7ee9410111f50348af8acf6ce1fca624445f828 (HEAD -&lt;span class=&quot;op&quot;&gt;&amp;gt;&lt;/span&gt; master)&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb8-3&quot; title=&quot;3&quot;&gt;&lt;span class=&quot;ex&quot;&gt;Author&lt;/span&gt;: John Carter &lt;span class=&quot;op&quot;&gt;&amp;lt;&lt;/span&gt;carter.john@email.com&lt;span class=&quot;op&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb8-4&quot; title=&quot;4&quot;&gt;&lt;span class=&quot;ex&quot;&gt;Date&lt;/span&gt;:   Sun Sep 23 20:33:57 2018 +0430&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb8-5&quot; title=&quot;5&quot;&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb8-6&quot; title=&quot;6&quot;&gt;    &lt;span class=&quot;ex&quot;&gt;announcing&lt;/span&gt; myself&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code&gt;git log&lt;/code&gt; همراه با دیگر مشخصات هر &lt;code&gt;commit&lt;/code&gt; یک قیمت &lt;code&gt;hash&lt;/code&gt; نیز به ما می‌دهد. هر گاه نیاز به &lt;code&gt;hash&lt;/code&gt; یک &lt;code&gt;commit&lt;/code&gt; داشتیم لازم نیست همه این قیمت را کاپی کنیم. فقط به شش یا هفت کرکتر اول آن نیاز داریم. برای اینکه مجبور نباشیم هر دفعه که به &lt;code&gt;hash&lt;/code&gt; یک &lt;code&gt;commit&lt;/code&gt; نیاز داریم شش/هفت کرکتر را بشماریم و کاپی کنیم از &lt;code&gt;--abbrev-commit&lt;/code&gt; استفاده می کنیم&lt;/p&gt;
+&lt;div class=&quot;sourceCode&quot; id=&quot;cb9&quot;&gt;&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;a class=&quot;sourceLine&quot; id=&quot;cb9-1&quot; title=&quot;1&quot;&gt;$ &lt;span class=&quot;fu&quot;&gt;git&lt;/span&gt; log --abbrev-commit&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb9-2&quot; title=&quot;2&quot;&gt;&lt;span class=&quot;ex&quot;&gt;commit&lt;/span&gt; e7ee941 (HEAD -&lt;span class=&quot;op&quot;&gt;&amp;gt;&lt;/span&gt; master)&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb9-3&quot; title=&quot;3&quot;&gt;&lt;span class=&quot;ex&quot;&gt;Author&lt;/span&gt;: John Carter &lt;span class=&quot;op&quot;&gt;&amp;lt;&lt;/span&gt;carter.john@email.com&lt;span class=&quot;op&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb9-4&quot; title=&quot;4&quot;&gt;&lt;span class=&quot;ex&quot;&gt;Date&lt;/span&gt;:   Sun Sep 23 20:33:57 2018 +0430&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb9-5&quot; title=&quot;5&quot;&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb9-6&quot; title=&quot;6&quot;&gt;    &lt;span class=&quot;ex&quot;&gt;announcing&lt;/span&gt; myself&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;حالا تغییرات بیشتری به فایل می آوریم&lt;/p&gt;
+&lt;div class=&quot;sourceCode&quot; id=&quot;cb10&quot;&gt;&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;a class=&quot;sourceLine&quot; id=&quot;cb10-1&quot; title=&quot;1&quot;&gt;$ &lt;span class=&quot;fu&quot;&gt;cat&lt;/span&gt; a.txt&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb10-2&quot; title=&quot;2&quot;&gt;&lt;span class=&quot;ex&quot;&gt;I&lt;/span&gt; am John Carter from Barsoom.&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb10-3&quot; title=&quot;3&quot;&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb10-4&quot; title=&quot;4&quot;&gt;&lt;span class=&quot;ex&quot;&gt;Dear&lt;/span&gt; Ned,&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb10-5&quot; title=&quot;5&quot;&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb10-6&quot; title=&quot;6&quot;&gt;&lt;span class=&quot;ex&quot;&gt;I&lt;/span&gt; hope this letter finds you well. I am writing this letter to you from my death bed.&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;قبل از &lt;code&gt;commit&lt;/code&gt; کردن،‌ می توانیم ببینیم چه تغییراتی به فایل ها آمده است. چند خط اول خروجی به ما کمک می کنند بفهمیم که چه تغییراتی مربوط به یک &lt;code&gt;commit&lt;/code&gt; است. در خروجی زیر خطهایی که با + شروع می شوند تغییرهایی هستند که بعد از &lt;code&gt;commit&lt;/code&gt; به وجود آمده اند.&lt;/p&gt;
+&lt;div class=&quot;sourceCode&quot; id=&quot;cb11&quot;&gt;&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;a class=&quot;sourceLine&quot; id=&quot;cb11-1&quot; title=&quot;1&quot;&gt;$ &lt;span class=&quot;fu&quot;&gt;git&lt;/span&gt; diff&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb11-2&quot; title=&quot;2&quot;&gt;&lt;span class=&quot;fu&quot;&gt;diff&lt;/span&gt; --git a/a.txt b/a.txt&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb11-3&quot; title=&quot;3&quot;&gt;&lt;span class=&quot;ex&quot;&gt;index&lt;/span&gt; bdd6876..ad21df1 100644&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb11-4&quot; title=&quot;4&quot;&gt;&lt;span class=&quot;ex&quot;&gt;---&lt;/span&gt; a/a.txt&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb11-5&quot; title=&quot;5&quot;&gt;&lt;span class=&quot;ex&quot;&gt;+++&lt;/span&gt; b/a.txt&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb11-6&quot; title=&quot;6&quot;&gt;&lt;span class=&quot;ex&quot;&gt;@@&lt;/span&gt; -1 +1,5 @@&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb11-7&quot; title=&quot;7&quot;&gt; &lt;span class=&quot;ex&quot;&gt;I&lt;/span&gt; am John Carter from Barsoom.&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb11-8&quot; title=&quot;8&quot;&gt; &lt;span class=&quot;ex&quot;&gt;+&lt;/span&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb11-9&quot; title=&quot;9&quot;&gt; &lt;span class=&quot;ex&quot;&gt;+Dear&lt;/span&gt; Ned,&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb11-10&quot; title=&quot;10&quot;&gt; &lt;span class=&quot;ex&quot;&gt;+&lt;/span&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb11-11&quot; title=&quot;11&quot;&gt; &lt;span class=&quot;ex&quot;&gt;+I&lt;/span&gt; hope this letter finds you well. I am writing this letter to you from my death bed.&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;حالا این تغییرها را هم &lt;code&gt;commit&lt;/code&gt; می کنیم&lt;/p&gt;
+&lt;div class=&quot;sourceCode&quot; id=&quot;cb12&quot;&gt;&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;a class=&quot;sourceLine&quot; id=&quot;cb12-1&quot; title=&quot;1&quot;&gt;$ &lt;span class=&quot;fu&quot;&gt;git&lt;/span&gt; add .&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb12-2&quot; title=&quot;2&quot;&gt;$ &lt;span class=&quot;fu&quot;&gt;git&lt;/span&gt; commit -m &lt;span class=&quot;st&quot;&gt;&amp;#39;letter intro&amp;#39;&lt;/span&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb12-3&quot; title=&quot;3&quot;&gt;[&lt;span class=&quot;ex&quot;&gt;master&lt;/span&gt; 5025a43] letter intro&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb12-4&quot; title=&quot;4&quot;&gt; &lt;span class=&quot;ex&quot;&gt;1&lt;/span&gt; file changed, 4 insertions(+)&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;حالا در این &lt;code&gt;repo&lt;/code&gt; دو &lt;code&gt;commit&lt;/code&gt; داریم. اگر بخواهیم فرق بین هر دو را ببینیم اول باید &lt;code&gt;hash&lt;/code&gt; هر &lt;code&gt;commit&lt;/code&gt; را بدانیم&lt;/p&gt;
+&lt;div class=&quot;sourceCode&quot; id=&quot;cb13&quot;&gt;&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;a class=&quot;sourceLine&quot; id=&quot;cb13-1&quot; title=&quot;1&quot;&gt;$ &lt;span class=&quot;fu&quot;&gt;git&lt;/span&gt; log --abbrev-commit&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb13-2&quot; title=&quot;2&quot;&gt;&lt;span class=&quot;ex&quot;&gt;commit&lt;/span&gt; 5025a43 (HEAD -&lt;span class=&quot;op&quot;&gt;&amp;gt;&lt;/span&gt; master)&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb13-3&quot; title=&quot;3&quot;&gt;&lt;span class=&quot;ex&quot;&gt;Author&lt;/span&gt;: John Carter &lt;span class=&quot;op&quot;&gt;&amp;lt;&lt;/span&gt;carter.john@email.com&lt;span class=&quot;op&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb13-4&quot; title=&quot;4&quot;&gt;&lt;span class=&quot;ex&quot;&gt;Date&lt;/span&gt;:   Sun Sep 23 20:47:12 2018 +0430&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb13-5&quot; title=&quot;5&quot;&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb13-6&quot; title=&quot;6&quot;&gt;    &lt;span class=&quot;ex&quot;&gt;letter&lt;/span&gt; intro&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb13-7&quot; title=&quot;7&quot;&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb13-8&quot; title=&quot;8&quot;&gt;&lt;span class=&quot;ex&quot;&gt;commit&lt;/span&gt; e7ee941&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb13-9&quot; title=&quot;9&quot;&gt;&lt;span class=&quot;ex&quot;&gt;Author&lt;/span&gt;: John Carter &lt;span class=&quot;op&quot;&gt;&amp;lt;&lt;/span&gt;carter.john@email.com&lt;span class=&quot;op&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb13-10&quot; title=&quot;10&quot;&gt;&lt;span class=&quot;ex&quot;&gt;Date&lt;/span&gt;:   Sun Sep 23 20:33:57 2018 +0430&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb13-11&quot; title=&quot;11&quot;&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb13-12&quot; title=&quot;12&quot;&gt;    &lt;span class=&quot;ex&quot;&gt;announcing&lt;/span&gt; myself&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;برای دیدن تغییرات این دو &lt;code&gt;commit&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;sourceCode&quot; id=&quot;cb14&quot;&gt;&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;a class=&quot;sourceLine&quot; id=&quot;cb14-1&quot; title=&quot;1&quot;&gt;$ &lt;span class=&quot;fu&quot;&gt;git&lt;/span&gt; diff 5025a43 e7ee941&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb14-2&quot; title=&quot;2&quot;&gt;&lt;span class=&quot;fu&quot;&gt;diff&lt;/span&gt; --git a/a.txt b/a.txt&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb14-3&quot; title=&quot;3&quot;&gt;&lt;span class=&quot;ex&quot;&gt;index&lt;/span&gt; ad21df1..bdd6876 100644&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb14-4&quot; title=&quot;4&quot;&gt;&lt;span class=&quot;ex&quot;&gt;---&lt;/span&gt; a/a.txt&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb14-5&quot; title=&quot;5&quot;&gt;&lt;span class=&quot;ex&quot;&gt;+++&lt;/span&gt; b/a.txt&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb14-6&quot; title=&quot;6&quot;&gt;&lt;span class=&quot;ex&quot;&gt;@@&lt;/span&gt; -1,5 +1 @@&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb14-7&quot; title=&quot;7&quot;&gt; &lt;span class=&quot;ex&quot;&gt;I&lt;/span&gt; am John Carter from Barsoom.&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb14-8&quot; title=&quot;8&quot;&gt; &lt;span class=&quot;ex&quot;&gt;-&lt;/span&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb14-9&quot; title=&quot;9&quot;&gt; &lt;span class=&quot;ex&quot;&gt;-Dear&lt;/span&gt; Ned,&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb14-10&quot; title=&quot;10&quot;&gt; &lt;span class=&quot;ex&quot;&gt;-&lt;/span&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb14-11&quot; title=&quot;11&quot;&gt; &lt;span class=&quot;ex&quot;&gt;-I&lt;/span&gt; hope this letter finds you well. I am writing this letter to you from my death bed.&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id=&quot;کار-با-branch&quot;&gt;کار با &lt;code&gt;branch&lt;/code&gt;&lt;/h4&gt;
+&lt;p&gt;فرض کنید به فکر ایده‌ای می‌افتید و می‌خواهید آن را امتحان کنید اما در عین حال باید کاری را که محول شده‌اید انجام دهید. به جای اینکه از فایل‌هایتان کاپی بگیرید می‌توانید یک &lt;code&gt;branch&lt;/code&gt; ایجاد کنید، تغییراتی که می‌خواهید روی آن &lt;code&gt;branch&lt;/code&gt; اعمال کنید و هر گاه که خواستید به &lt;code&gt;branch&lt;/code&gt; اصلی برگردید و کارتان را پیش ببرید. اگر دیدید ایده‌ای که به آن فکر کردید موفق بوده می‌توانید دو &lt;code&gt;branch&lt;/code&gt; را با هم &lt;code&gt;merge&lt;/code&gt; کنید. اگر هم دیدید تغییراتی که آورده‌اید موفق نبوده می‌توانید به راحتی &lt;code&gt;branch&lt;/code&gt; را حذف کنید. در &lt;code&gt;git&lt;/code&gt; &lt;code&gt;branch&lt;/code&gt; اصلی به نام &lt;code&gt;master&lt;/code&gt; یاد می‌شود. برای اینکه &lt;code&gt;branch&lt;/code&gt; تازه‌ای ایجاد کنید می‌توانید از دستور زیر استفاده کنید&lt;/p&gt;
+&lt;div class=&quot;sourceCode&quot; id=&quot;cb15&quot;&gt;&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;a class=&quot;sourceLine&quot; id=&quot;cb15-1&quot; title=&quot;1&quot;&gt;$ &lt;span class=&quot;fu&quot;&gt;git&lt;/span&gt; checkout -b jarsoom&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb15-2&quot; title=&quot;2&quot;&gt;&lt;span class=&quot;ex&quot;&gt;Switched&lt;/span&gt; to a new branch &lt;span class=&quot;st&quot;&gt;&amp;#39;jarsoom&amp;#39;&lt;/span&gt;&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;بعد از اینکه تغییرهایتان را به این &lt;code&gt;branch&lt;/code&gt; آوردید می‌توانید به راحتی به &lt;code&gt;master branch&lt;/code&gt; برگردید&lt;/p&gt;
+&lt;div class=&quot;sourceCode&quot; id=&quot;cb16&quot;&gt;&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;a class=&quot;sourceLine&quot; id=&quot;cb16-1&quot; title=&quot;1&quot;&gt;$ &lt;span class=&quot;fu&quot;&gt;git&lt;/span&gt; checkout master&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb16-2&quot; title=&quot;2&quot;&gt;&lt;span class=&quot;ex&quot;&gt;On&lt;/span&gt; branch master&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb16-3&quot; title=&quot;3&quot;&gt;&lt;span class=&quot;ex&quot;&gt;nothing&lt;/span&gt; to commit, working tree clean&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;و برای &lt;code&gt;merge&lt;/code&gt; کردن دو &lt;code&gt;branch&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;sourceCode&quot; id=&quot;cb17&quot;&gt;&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;a class=&quot;sourceLine&quot; id=&quot;cb17-1&quot; title=&quot;1&quot;&gt;$ &lt;span class=&quot;fu&quot;&gt;git&lt;/span&gt; merge jarsoom&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb17-2&quot; title=&quot;2&quot;&gt;&lt;span class=&quot;ex&quot;&gt;Updating&lt;/span&gt; 6a7245a..42522a8&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb17-3&quot; title=&quot;3&quot;&gt;&lt;span class=&quot;ex&quot;&gt;Fast-forward&lt;/span&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb17-4&quot; title=&quot;4&quot;&gt; &lt;span class=&quot;ex&quot;&gt;tharks.txt&lt;/span&gt; &lt;span class=&quot;kw&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;ex&quot;&gt;1&lt;/span&gt; +&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb17-5&quot; title=&quot;5&quot;&gt; &lt;span class=&quot;ex&quot;&gt;1&lt;/span&gt; file changed, 1 insertion(+)&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb17-6&quot; title=&quot;6&quot;&gt; &lt;span class=&quot;ex&quot;&gt;create&lt;/span&gt; mode 100644 tharks.txt&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;هر وقت خواستید یک &lt;code&gt;branch&lt;/code&gt; را حذف کنید از این دستور استفاده کنید&lt;/p&gt;
+&lt;div class=&quot;sourceCode&quot; id=&quot;cb18&quot;&gt;&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;a class=&quot;sourceLine&quot; id=&quot;cb18-1&quot; title=&quot;1&quot;&gt;$ &lt;span class=&quot;fu&quot;&gt;git&lt;/span&gt; branch -d jarsoom&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb18-2&quot; title=&quot;2&quot;&gt;&lt;span class=&quot;ex&quot;&gt;Deleted&lt;/span&gt; branch jarsoom (was 42522a8)&lt;span class=&quot;ex&quot;&gt;.&lt;/span&gt;&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id=&quot;استفاده-از-stash&quot;&gt;استفاده از &lt;code&gt;stash&lt;/code&gt;&lt;/h4&gt;
+&lt;p&gt;فرض کنید در &lt;code&gt;branch&lt;/code&gt; فعلی مقداری کار کرده‌اید و به یاد این می‌افتید که باید کار دیگری را شروع کنید. در عین حال نمی‌خواهید این مقدار کاری را که انجام داده‌اید از دست بدهید. می‌توانید از &lt;code&gt;stash&lt;/code&gt; برای ذخیره این تغییرات استفاده کنید.&lt;/p&gt;
+&lt;div class=&quot;sourceCode&quot; id=&quot;cb19&quot;&gt;&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;a class=&quot;sourceLine&quot; id=&quot;cb19-1&quot; title=&quot;1&quot;&gt;$ &lt;span class=&quot;bu&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;st&quot;&gt;&amp;quot;a new source of energy&amp;quot;&lt;/span&gt; &lt;span class=&quot;op&quot;&gt;&amp;gt;&lt;/span&gt; the_blue_light.txt&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb19-2&quot; title=&quot;2&quot;&gt;$ &lt;span class=&quot;ex&quot;&gt;add&lt;/span&gt; . &lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb19-3&quot; title=&quot;3&quot;&gt;$ &lt;span class=&quot;fu&quot;&gt;git&lt;/span&gt; stash push -m &lt;span class=&quot;st&quot;&gt;&amp;#39;about the blue light&amp;#39;&lt;/span&gt; .&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb19-4&quot; title=&quot;4&quot;&gt;&lt;span class=&quot;ex&quot;&gt;Saved&lt;/span&gt; working directory and index state On master: about the blue light&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code&gt;stash&lt;/code&gt; تغییرات شما را به صورت یک &lt;code&gt;stack&lt;/code&gt; ذخیره می‌کند یعنی هر وقت تغییراتتان را به &lt;code&gt;stash&lt;/code&gt; ‍&lt;code&gt;push&lt;/code&gt; می‌کنید، این تغییرات در نقطهٔ بالایی (و یا شروع)‌ این &lt;code&gt;stack&lt;/code&gt; قرار می‌گیرند. برای دیدن لیست &lt;code&gt;stash&lt;/code&gt; از این دستور استفاده کنید&lt;/p&gt;
+&lt;div class=&quot;sourceCode&quot; id=&quot;cb20&quot;&gt;&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;a class=&quot;sourceLine&quot; id=&quot;cb20-1&quot; title=&quot;1&quot;&gt;$ &lt;span class=&quot;fu&quot;&gt;git&lt;/span&gt; stash list&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb20-2&quot; title=&quot;2&quot;&gt;&lt;span class=&quot;ex&quot;&gt;stash@&lt;/span&gt;&lt;span class=&quot;dt&quot;&gt;{0}&lt;/span&gt;: On master: about the blue light&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;و برای اعمال یک &lt;code&gt;stash&lt;/code&gt; از این دستور استفاده کنید&lt;/p&gt;
+&lt;div class=&quot;sourceCode&quot; id=&quot;cb21&quot;&gt;&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;a class=&quot;sourceLine&quot; id=&quot;cb21-1&quot; title=&quot;1&quot;&gt;$ &lt;span class=&quot;fu&quot;&gt;git&lt;/span&gt; stash apply stash@&lt;span class=&quot;dt&quot;&gt;{0}&lt;/span&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb21-2&quot; title=&quot;2&quot;&gt;&lt;span class=&quot;ex&quot;&gt;On&lt;/span&gt; branch master&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb21-3&quot; title=&quot;3&quot;&gt;&lt;span class=&quot;ex&quot;&gt;Changes&lt;/span&gt; to be committed:&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb21-4&quot; title=&quot;4&quot;&gt;  &lt;span class=&quot;kw&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ex&quot;&gt;use&lt;/span&gt; &lt;span class=&quot;st&quot;&gt;&amp;quot;git reset HEAD &amp;lt;file&amp;gt;...&amp;quot;&lt;/span&gt; to unstage&lt;span class=&quot;kw&quot;&gt;)&lt;/span&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb21-5&quot; title=&quot;5&quot;&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb21-6&quot; title=&quot;6&quot;&gt;        &lt;span class=&quot;ex&quot;&gt;new&lt;/span&gt; file:   the_blue_light.txt&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id=&quot;ایجاد-و-اعمال-patch&quot;&gt;ایجاد و اعمال &lt;code&gt;patch&lt;/code&gt;&lt;/h4&gt;
+&lt;p&gt;خروجی &lt;code&gt;git diff&lt;/code&gt; &lt;code&gt;patch&lt;/code&gt; نام دارد.&lt;/p&gt;
+&lt;div class=&quot;sourceCode&quot; id=&quot;cb22&quot;&gt;&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;a class=&quot;sourceLine&quot; id=&quot;cb22-1&quot; title=&quot;1&quot;&gt;$ &lt;span class=&quot;fu&quot;&gt;git&lt;/span&gt; diff --staged&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb22-2&quot; title=&quot;2&quot;&gt;&lt;span class=&quot;fu&quot;&gt;diff&lt;/span&gt; --git a/the_blue_light.txt b/the_blue_light.txt&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb22-3&quot; title=&quot;3&quot;&gt;&lt;span class=&quot;ex&quot;&gt;new&lt;/span&gt; file mode 100644&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb22-4&quot; title=&quot;4&quot;&gt;&lt;span class=&quot;ex&quot;&gt;index&lt;/span&gt; 0000000..df0a0ef&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb22-5&quot; title=&quot;5&quot;&gt;&lt;span class=&quot;ex&quot;&gt;---&lt;/span&gt; /dev/null&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb22-6&quot; title=&quot;6&quot;&gt;&lt;span class=&quot;ex&quot;&gt;+++&lt;/span&gt; b/the_blue_light.txt&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb22-7&quot; title=&quot;7&quot;&gt;&lt;span class=&quot;ex&quot;&gt;@@&lt;/span&gt; -0,0 +1 @@&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb22-8&quot; title=&quot;8&quot;&gt;&lt;span class=&quot;ex&quot;&gt;+a&lt;/span&gt; new source of energy&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb22-9&quot; title=&quot;9&quot;&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb22-10&quot; title=&quot;10&quot;&gt;&lt;span class=&quot;fu&quot;&gt;git&lt;/span&gt; diff --staged &lt;span class=&quot;op&quot;&gt;&amp;gt;&lt;/span&gt; mars_patch.txt&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;در کد بالا از پارامتر &lt;code&gt;--staged&lt;/code&gt; به این خاطر استفاده کرده‌ایم که فایل‌هایمان را به &lt;code&gt;staging&lt;/code&gt; اضافه کرده‌ایم. اگر هنوز فایل‌هایتان را به &lt;code&gt;staging&lt;/code&gt; اضافه نکرده‌اید می‌توانید این پارامتر را در نظر نگیرید. اگر خروجی بالا را دریک فایل ذخیره کنید، به این فایل &lt;code&gt;patch&lt;/code&gt; گفته می‌شود. می‌توانید این فایل را به کسی بفرستید که یک کاپی از &lt;code&gt;repository&lt;/code&gt; شما دارد اما به آخرین نسخهٔ فایل‌ها دسترسی ندارد. تنها کاری که باید برای اعمال این &lt;code&gt;patch&lt;/code&gt; انجام بدهید اجرای این دستور است&lt;/p&gt;
+&lt;div class=&quot;sourceCode&quot; id=&quot;cb23&quot;&gt;&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;a class=&quot;sourceLine&quot; id=&quot;cb23-1&quot; title=&quot;1&quot;&gt;$ &lt;span class=&quot;fu&quot;&gt;git&lt;/span&gt; apply mars_patch.txt&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb23-2&quot; title=&quot;2&quot;&gt;$ &lt;span class=&quot;fu&quot;&gt;git&lt;/span&gt; status&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb23-3&quot; title=&quot;3&quot;&gt;&lt;span class=&quot;ex&quot;&gt;On&lt;/span&gt; branch master&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb23-4&quot; title=&quot;4&quot;&gt;&lt;span class=&quot;ex&quot;&gt;Untracked&lt;/span&gt; files:&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb23-5&quot; title=&quot;5&quot;&gt;  &lt;span class=&quot;kw&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ex&quot;&gt;use&lt;/span&gt; &lt;span class=&quot;st&quot;&gt;&amp;quot;git add &amp;lt;file&amp;gt;...&amp;quot;&lt;/span&gt; to include in what will be committed&lt;span class=&quot;kw&quot;&gt;)&lt;/span&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb23-6&quot; title=&quot;6&quot;&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb23-7&quot; title=&quot;7&quot;&gt;        &lt;span class=&quot;ex&quot;&gt;the_blue_light.txt&lt;/span&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb23-8&quot; title=&quot;8&quot;&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb23-9&quot; title=&quot;9&quot;&gt;&lt;span class=&quot;ex&quot;&gt;nothing&lt;/span&gt; added to commit but untracked files present (use &lt;span class=&quot;st&quot;&gt;&amp;quot;git add&amp;quot;&lt;/span&gt; to track)&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id=&quot;آپلود-به-server&quot;&gt;آپلود به &lt;code&gt;server&lt;/code&gt;&lt;/h4&gt;
+&lt;p&gt;در &lt;code&gt;git&lt;/code&gt; به سرور &lt;code&gt;remote&lt;/code&gt; گفته می‌شود. هر &lt;code&gt;repository&lt;/code&gt; می‌تواند چند &lt;code&gt;remote&lt;/code&gt; داشته باشد. اگر فرض کنیم در جایی مثل &lt;code&gt;github&lt;/code&gt; یا &lt;code&gt;bitbucket&lt;/code&gt; یک &lt;code&gt;repository&lt;/code&gt; ایجاد کرده‌اید با آدرس &lt;code&gt;git@github.com:johncarter/mars-diary.git&lt;/code&gt;، می‌توانید این &lt;code&gt;remote&lt;/code&gt; را به این صورت به &lt;code&gt;repository&lt;/code&gt; خود اضافه کنید&lt;/p&gt;
+&lt;div class=&quot;sourceCode&quot; id=&quot;cb24&quot;&gt;&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;a class=&quot;sourceLine&quot; id=&quot;cb24-1&quot; title=&quot;1&quot;&gt;$ &lt;span class=&quot;fu&quot;&gt;git&lt;/span&gt; remote add origin git@github.com:johncarter/mars-diary.git&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;در اینجا &lt;code&gt;remote&lt;/code&gt; ای که اضافه کرده‌ایم &lt;code&gt;origin&lt;/code&gt; نام دارد.&lt;/p&gt;
+&lt;p&gt;کسی که می‌خواهد برای اولین بار با این &lt;code&gt;repository&lt;/code&gt; کار کند باید آن را &lt;code&gt;clone&lt;/code&gt; کند&lt;/p&gt;
+&lt;div class=&quot;sourceCode&quot; id=&quot;cb25&quot;&gt;&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;a class=&quot;sourceLine&quot; id=&quot;cb25-1&quot; title=&quot;1&quot;&gt;$ &lt;span class=&quot;fu&quot;&gt;git&lt;/span&gt; clone git@github.com:johncarter/mars-diary.git mars-diary&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb25-2&quot; title=&quot;2&quot;&gt;&lt;span class=&quot;ex&quot;&gt;Cloning&lt;/span&gt; into &lt;span class=&quot;st&quot;&gt;&amp;#39;mars-diary...&lt;/span&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb25-3&quot; title=&quot;3&quot;&gt;&lt;span class=&quot;st&quot;&gt;done.&lt;/span&gt;&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;برای دیدن لیست &lt;code&gt;remote&lt;/code&gt; های یک &lt;code&gt;repository&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;sourceCode&quot; id=&quot;cb26&quot;&gt;&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;a class=&quot;sourceLine&quot; id=&quot;cb26-1&quot; title=&quot;1&quot;&gt;$ &lt;span class=&quot;fu&quot;&gt;git&lt;/span&gt; remote -v&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb26-2&quot; title=&quot;2&quot;&gt;&lt;span class=&quot;ex&quot;&gt;origin&lt;/span&gt;  git@github.com:johncarter/mars-diary.git (fetch)&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb26-3&quot; title=&quot;3&quot;&gt;&lt;span class=&quot;ex&quot;&gt;origin&lt;/span&gt;  git@github.com:johncarter/mars-diary.git (push)&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;آپلود کردن فایل‌ها به &lt;code&gt;git&lt;/code&gt; با نام &lt;code&gt;push&lt;/code&gt; یاد می‌شود. با هر &lt;code&gt;push&lt;/code&gt; باید نام &lt;code&gt;remote&lt;/code&gt; (که به نام &lt;code&gt;upstream&lt;/code&gt; هم یاد می‌شود) را بعد از پارامتر &lt;code&gt;-u&lt;/code&gt; و &lt;code&gt;branch&lt;/code&gt; ای که می‌خواهیم فایل‌ها به آن آپلود شوند را ذکر کنیم.&lt;/p&gt;
+&lt;div class=&quot;sourceCode&quot; id=&quot;cb27&quot;&gt;&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;a class=&quot;sourceLine&quot; id=&quot;cb27-1&quot; title=&quot;1&quot;&gt;$ &lt;span class=&quot;fu&quot;&gt;git&lt;/span&gt; push -u origin master&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb27-2&quot; title=&quot;2&quot;&gt;&lt;span class=&quot;ex&quot;&gt;Enumerating&lt;/span&gt; objects: 9, done.&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb27-3&quot; title=&quot;3&quot;&gt;&lt;span class=&quot;ex&quot;&gt;Counting&lt;/span&gt; objects: 100% (9/9), &lt;span class=&quot;kw&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;ex&quot;&gt;.&lt;/span&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb27-4&quot; title=&quot;4&quot;&gt;&lt;span class=&quot;ex&quot;&gt;Delta&lt;/span&gt; compression using up to 4 threads&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb27-5&quot; title=&quot;5&quot;&gt;&lt;span class=&quot;ex&quot;&gt;Compressing&lt;/span&gt; objects: 100% (6/6), &lt;span class=&quot;kw&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;ex&quot;&gt;.&lt;/span&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb27-6&quot; title=&quot;6&quot;&gt;&lt;span class=&quot;ex&quot;&gt;Writing&lt;/span&gt; objects: 100% (9/9), &lt;span class=&quot;ex&quot;&gt;850&lt;/span&gt; bytes &lt;span class=&quot;kw&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;ex&quot;&gt;850.00&lt;/span&gt; KiB/s, done.&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb27-7&quot; title=&quot;7&quot;&gt;&lt;span class=&quot;ex&quot;&gt;Total&lt;/span&gt; 9 (delta 0), &lt;span class=&quot;ex&quot;&gt;reused&lt;/span&gt; 0 (delta 0)&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb27-8&quot; title=&quot;8&quot;&gt;&lt;span class=&quot;ex&quot;&gt;To&lt;/span&gt; git@github.com:johncarter/mars-diary.git&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb27-9&quot; title=&quot;9&quot;&gt; &lt;span class=&quot;ex&quot;&gt;*&lt;/span&gt; [new branch]      master -&lt;span class=&quot;op&quot;&gt;&amp;gt;&lt;/span&gt; master&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb27-10&quot; title=&quot;10&quot;&gt;&lt;span class=&quot;ex&quot;&gt;Branch&lt;/span&gt; &lt;span class=&quot;st&quot;&gt;&amp;#39;master&amp;#39;&lt;/span&gt; set up to track remote branch &lt;span class=&quot;st&quot;&gt;&amp;#39;master&amp;#39;&lt;/span&gt; from &lt;span class=&quot;st&quot;&gt;&amp;#39;dir&amp;#39;&lt;/span&gt;.&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;اگر بخواهیم تغییرات را از &lt;code&gt;upstream&lt;/code&gt; دانلود کنیم باید از دستور &lt;code&gt;pull&lt;/code&gt; استفاده کنیم. درست مثل دستور &lt;code&gt;push&lt;/code&gt; در &lt;code&gt;pull&lt;/code&gt; هم باید نام &lt;code&gt;remote&lt;/code&gt; و &lt;code&gt;branch&lt;/code&gt; را ذکر کنیم و تفاوت این دستور با &lt;code&gt;push&lt;/code&gt; این است که نیازی به ذکر پارامتر &lt;code&gt;-u&lt;/code&gt; نیست&lt;/p&gt;
+&lt;div class=&quot;sourceCode&quot; id=&quot;cb28&quot;&gt;&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;a class=&quot;sourceLine&quot; id=&quot;cb28-1&quot; title=&quot;1&quot;&gt;$ &lt;span class=&quot;fu&quot;&gt;git&lt;/span&gt; pull origin master&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb28-2&quot; title=&quot;2&quot;&gt;&lt;span class=&quot;ex&quot;&gt;remote&lt;/span&gt;: Enumerating objects: 9, done.&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb28-3&quot; title=&quot;3&quot;&gt;&lt;span class=&quot;ex&quot;&gt;remote&lt;/span&gt;: Counting objects: 100% (9/9), &lt;span class=&quot;kw&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;ex&quot;&gt;.&lt;/span&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb28-4&quot; title=&quot;4&quot;&gt;&lt;span class=&quot;ex&quot;&gt;remote&lt;/span&gt;: Compressing objects: 100% (6/6), &lt;span class=&quot;kw&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;ex&quot;&gt;.&lt;/span&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb28-5&quot; title=&quot;5&quot;&gt;&lt;span class=&quot;ex&quot;&gt;remote&lt;/span&gt;: Total 9 (delta 0), &lt;span class=&quot;ex&quot;&gt;reused&lt;/span&gt; 0 (delta 0)&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb28-6&quot; title=&quot;6&quot;&gt;&lt;span class=&quot;ex&quot;&gt;Unpacking&lt;/span&gt; objects: 100% (9/9), &lt;span class=&quot;kw&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;ex&quot;&gt;.&lt;/span&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb28-7&quot; title=&quot;7&quot;&gt;&lt;span class=&quot;ex&quot;&gt;From&lt;/span&gt; git@github.com:johncarter/mars-diary.git&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb28-8&quot; title=&quot;8&quot;&gt; &lt;span class=&quot;ex&quot;&gt;*&lt;/span&gt; branch            master     -&lt;span class=&quot;op&quot;&gt;&amp;gt;&lt;/span&gt; FETCH_HEAD&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb28-9&quot; title=&quot;9&quot;&gt; &lt;span class=&quot;ex&quot;&gt;*&lt;/span&gt; [new branch]      master     -&lt;span class=&quot;op&quot;&gt;&amp;gt;&lt;/span&gt; origin/master&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;در این نوشته فقط با چند دستور ابتدایی کار با &lt;code&gt;git&lt;/code&gt; آشنا شدیم. در نوشته‌های بعد با ترفندهای کارآمدتر و پیشرفته تری آشنا خواهیم شد. مثلاً اینکه چطور از یک &lt;code&gt;branch&lt;/code&gt; فقط یک فایل را بیرون بکشیم و یا چطور از یک &lt;code&gt;commit&lt;/code&gt; مشخص یک &lt;code&gt;branch&lt;/code&gt; ایجاد کنیم.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</description>
+    </item>
     <item>
       <title>لینکس،‌ بهشت مالتی میدیا: ffmpeg</title>
       <link>https://hamidsafdari.github.io/articles/ffmpeg-rocks/</link>
       <pubDate>Thu, 24 Jan 2019 04:30:00 +0530</pubDate>
       <guid isPermaLink="true">https://hamidsafdari.github.io/articles/ffmpeg-rocks/</guid>
       <author>Hamid Safdari</author>
-      <description>&lt;p&gt;در سیستم عاملی مثل ویندوز یکی از کارهایی که به نظر مشکل می آید کار با فایل های مالتی میدیا است. شاید بخواهید یک فایل صوتی را به فرمتی تبدیل کنید که بتوانید آن را با موبایلتان پخش کنید. مثلا از &lt;code&gt;ogg&lt;/code&gt; به &lt;code&gt;mp3&lt;/code&gt;. اگر از ویندوز استفاده می کنید مجبور خواهید بود ابزاری را از اینترت دانلود کنید. در آن صورت هم این ابزار به شما چند قابلیت ساده می دهد و برای قابلیت های بیشتر شاید مجبور باشید نسخهٔ‌ premium برنامه را بخرید. اگر حوصله تایپ کردن چند خط در کمند لاین (&lt;code&gt;command line&lt;/code&gt;) را داشته باشید لینکس ابزاری دارد که می تواند پاسخ گوی تقریباً تمامی نیازهای مالتی میدیای شما باشد.&lt;/p&gt;
-&lt;hr&gt;
+      <description>&lt;!DOCTYPE html&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;&quot; xml:lang=&quot;&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=yes&quot; /&gt;
+  &lt;title&gt;Page Title&lt;/title&gt;
+  &lt;style type=&quot;text/css&quot;&gt;
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  &lt;/style&gt;
+  &lt;style type=&quot;text/css&quot;&gt;
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  &lt;/style&gt;
+  &lt;!--[if lt IE 9]&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js&quot;&gt;&lt;/script&gt;
+  &lt;![endif]--&gt;
+  &lt;style&gt;
+    .task-list-item {
+      list-style-type: none;
+    }
+    .task-list-item-checkbox {
+      margin-left: -1.6em;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;nav id=&quot;TOC&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://hamidsafdari.github.io/articles/ffmpeg-rocks/#تبدیل-فایل-مالتی-میدیا-از-یک-فرمت-به-فرمت-دیگر&quot;&gt;تبدیل فایل مالتی میدیا از یک فرمت به فرمت دیگر&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://hamidsafdari.github.io/articles/ffmpeg-rocks/#جدا-کردن-صدا-و-تصویر-از-یک-فایل-ویدیو&quot;&gt;جدا کردن صدا و تصویر از یک فایل ویدیو&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://hamidsafdari.github.io/articles/ffmpeg-rocks/#کوتاه-کردن-فایل-مالتی-میدیا&quot;&gt;کوتاه کردن فایل مالتی میدیا&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://hamidsafdari.github.io/articles/ffmpeg-rocks/#یک-جا-کردن-merging-صدا-و-تصویر&quot;&gt;یک جا کردن (merging) صدا و تصویر&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://hamidsafdari.github.io/articles/ffmpeg-rocks/#تهیه-اسکرین-شات-از-ویدیو&quot;&gt;تهیه اسکرین شات از ویدیو&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://hamidsafdari.github.io/articles/ffmpeg-rocks/#sync-کردن-ویدیو-و-صوت&quot;&gt;sync کردن ویدیو و صوت&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://hamidsafdari.github.io/articles/ffmpeg-rocks/#نمایش-ویدیو-از-وبکم-webcam&quot;&gt;نمایش ویدیو از وبکم (webcam)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://hamidsafdari.github.io/articles/ffmpeg-rocks/#ضبط-صدا-از-مایکروفون&quot;&gt;ضبط صدا از مایکروفون&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://hamidsafdari.github.io/articles/ffmpeg-rocks/#جمع-بندی-ضبط-ویدیو-از-وبکم-و-صفحه-نمایش-و-صدا-از-مایکروفون&quot;&gt;جمع بندی:‌ ضبط ویدیو از وبکم و صفحه نمایش و صدا از مایکروفون&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://hamidsafdari.github.io/articles/ffmpeg-rocks/#منابع&quot;&gt;منابع&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+&lt;p&gt;در سیستم عاملی مثل ویندوز یکی از کارهایی که به نظر مشکل می آید کار با فایل های مالتی میدیا است. شاید بخواهید یک فایل صوتی را به فرمتی تبدیل کنید که بتوانید آن را با موبایلتان پخش کنید. مثلا از &lt;code&gt;ogg&lt;/code&gt; به &lt;code&gt;mp3&lt;/code&gt;. اگر از ویندوز استفاده می کنید مجبور خواهید بود ابزاری را از اینترت دانلود کنید. در آن صورت هم این ابزار به شما چند قابلیت ساده می دهد و برای قابلیت های بیشتر شاید مجبور باشید نسخهٔ‌ premium برنامه را بخرید. اگر حوصله تایپ کردن چند خط در کمند لاین (&lt;code&gt;command line&lt;/code&gt;) را داشته باشید لینکس ابزاری دارد که می تواند پاسخ گوی تقریباً تمامی نیازهای مالتی میدیای شما باشد.&lt;/p&gt;
+&lt;hr /&gt;
 &lt;p&gt;این ابزار عبارت است از &lt;code&gt;ffmpeg&lt;/code&gt;. شاید قبلا این نام را شنیده باشید اما به احتمال زیاد نمی دانستید که این برنامه چه قابلیت هایی دارد. چند تا از قابلیت هایی که &lt;code&gt;ffmpeg&lt;/code&gt; به شما می دهد عبارت اند از:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;تبدیل از یک فرمت مالتی میدیا به فرمت دیگر&lt;/li&gt;
-&lt;li&gt;جدا کردن صدا و تصویر از فایل ویدیو&lt;/li&gt;
-&lt;li&gt;کوتاه کردن فایل مالتی میدیا&lt;/li&gt;
-&lt;li&gt;یک جا کردن (&lt;code&gt;merging&lt;/code&gt;) صدا و تصویر&lt;/li&gt;
-&lt;li&gt;تهیه اسکرین شات از ویدیو&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;sync&lt;/code&gt; کردن ویدیو و صوت&lt;/li&gt;
-&lt;li&gt;نمایش ویدیو از وبکم (webcam)&lt;/li&gt;
-&lt;li&gt;فیلم گرفتن از صفحهٔ نمایش (screen capture)&lt;/li&gt;
+&lt;li&gt;
+تبدیل از یک فرمت مالتی میدیا به فرمت دیگر
+&lt;/li&gt;
+&lt;li&gt;
+جدا کردن صدا و تصویر از فایل ویدیو
+&lt;/li&gt;
+&lt;li&gt;
+کوتاه کردن فایل مالتی میدیا
+&lt;/li&gt;
+&lt;li&gt;
+یک جا کردن (&lt;code&gt;merging&lt;/code&gt;) صدا و تصویر
+&lt;/li&gt;
+&lt;li&gt;
+تهیه اسکرین شات از ویدیو
+&lt;/li&gt;
+&lt;li&gt;
+&lt;code&gt;sync&lt;/code&gt; کردن ویدیو و صوت
+&lt;/li&gt;
+&lt;li&gt;
+نمایش ویدیو از وبکم (webcam)
+&lt;/li&gt;
+&lt;li&gt;
+فیلم گرفتن از صفحهٔ نمایش (screen capture)
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;استفاده از &lt;code&gt;ffmpeg&lt;/code&gt; دو مزیت مهم دارد. اول اینکه برای انجام اکثر این کارها فقط به یک دستور &lt;code&gt;command&lt;/code&gt; نیاز دارید. فقط باید نام فایل را ذکر کنید و بدانید چه پارامترهایی را باید به &lt;code&gt;ffmpeg&lt;/code&gt; بدهید. نکته دوم اینکه &lt;code&gt;ffmpeg&lt;/code&gt; از حجم بسیار کمی برخوردار است. &lt;code&gt;ffmpeg&lt;/code&gt; به صورت &lt;code&gt;archive&lt;/code&gt; کمتر از &lt;code&gt;9MB&lt;/code&gt; حجم دارد. فرض کنید بعد از نصب حداکثر به &lt;code&gt;30MB&lt;/code&gt; فضا نیاز داشته باشد. اگر از یک محیط گرافیکی کم حجم مثل &lt;code&gt;i3wm&lt;/code&gt; استفاده کنید حداکثر &lt;code&gt;100MB RAM&lt;/code&gt; را اشغال می کند. پس اگر سیستم شما &lt;code&gt;4GB RAM&lt;/code&gt; داشته باشد برایتان چیزی حدود &lt;code&gt;4096 - 150 = 3946 MB&lt;/code&gt; باقی می ماند.&lt;/p&gt;
-&lt;h3 id=&quot;-&quot;&gt;تبدیل فایل مالتی میدیا از یک فرمت به فرمت دیگر&lt;/h3&gt;
+&lt;h3 id=&quot;تبدیل-فایل-مالتی-میدیا-از-یک-فرمت-به-فرمت-دیگر&quot;&gt;تبدیل فایل مالتی میدیا از یک فرمت به فرمت دیگر&lt;/h3&gt;
 &lt;p&gt;برای تبدیل کردن یک فایل مالتی میدیا از یک فرمت به فرمت دیگر می توانید از دستور زیر استفاده کنید. توجه داشته باشید تبدیل فرمت یکی از کارهایی است که وقت گیر است و به حداکثر توان کمپیوتر شما نیاز دارد&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;ffmpeg -i inputfile.webm -f mp4 -c:v libx264 -preset ultrafast -acodec aac -vf scale=-1:1080 -r 25 -hide_banner &lt;span class=&quot;string&quot;&gt;&quot;output.mp4&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&quot;-&quot;&gt;توضیح&lt;/h4&gt;
+&lt;div class=&quot;sourceCode&quot; id=&quot;cb1&quot;&gt;&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;a class=&quot;sourceLine&quot; id=&quot;cb1-1&quot; title=&quot;1&quot;&gt;&lt;span class=&quot;ex&quot;&gt;ffmpeg&lt;/span&gt; -i inputfile.webm -f mp4 -c:v libx264 -preset ultrafast -acodec aac -vf scale=-1:1080 -r 25 -hide_banner &lt;span class=&quot;st&quot;&gt;&amp;quot;output.mp4&amp;quot;&lt;/span&gt;&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h5 id=&quot;توضیح&quot;&gt;توضیح&lt;/h5&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;i-&lt;/code&gt; فایل دخولی را مشخص می کند&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;f-&lt;/code&gt; فرمت فایل نهایی است&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;v:c-&lt;/code&gt; مشخص می کند برای ویدیو از چه کدکی &lt;code&gt;codec&lt;/code&gt; استفاده شود&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;preset-&lt;/code&gt; مشخص کننده تنظیمات پیش فرضی است که در سرعت و کیفیت فایل خروجی نقش دارند&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;acodec-&lt;/code&gt; مشخص می کند برای صدای فایل خروجی از چه کدکی استفاده شود&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;vf-&lt;/code&gt; مخفف ‍&lt;code&gt;video filter&lt;/code&gt; هست&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;scale&lt;/code&gt; فیلتری است که به ‍&lt;code&gt;vf-&lt;/code&gt; داده شده و ابعاد فایل خروجی را تنظیم می کند. &lt;code&gt;1:1080-&lt;/code&gt; یعنی ارتفاع ویدیو &lt;code&gt;1080&lt;/code&gt; باشد و عرض آن مناسب با ارتفاع حساب شود&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;25 r-&lt;/code&gt; تعداد فریم ها در هر ثانیه را مشخص می کند&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;hide_banner-&lt;/code&gt; از &lt;code&gt;log&lt;/code&gt; زیاد خودداری می کند&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;output.mp4&lt;/code&gt; نام فایل خروجی است&lt;/li&gt;
+&lt;li&gt;
+&lt;code&gt;i-&lt;/code&gt; فایل دخولی را مشخص می کند
+&lt;/li&gt;
+&lt;li&gt;
+&lt;code&gt;f-&lt;/code&gt; فرمت فایل نهایی است
+&lt;/li&gt;
+&lt;li&gt;
+&lt;code&gt;v:c-&lt;/code&gt; مشخص می کند برای ویدیو از چه کدکی &lt;code&gt;codec&lt;/code&gt; استفاده شود
+&lt;/li&gt;
+&lt;li&gt;
+&lt;code&gt;preset-&lt;/code&gt; مشخص کننده تنظیمات پیش فرضی است که در سرعت و کیفیت فایل خروجی نقش دارند
+&lt;/li&gt;
+&lt;li&gt;
+&lt;code&gt;acodec-&lt;/code&gt; مشخص می کند برای صدای فایل خروجی از چه کدکی استفاده شود
+&lt;/li&gt;
+&lt;li&gt;
+&lt;code&gt;vf-&lt;/code&gt; مخفف ‍&lt;code&gt;video filter&lt;/code&gt; هست
+&lt;/li&gt;
+&lt;li&gt;
+&lt;code&gt;scale&lt;/code&gt; فیلتری است که به ‍&lt;code&gt;vf-&lt;/code&gt; داده شده و ابعاد فایل خروجی را تنظیم می کند. &lt;code&gt;1:1080-&lt;/code&gt; یعنی ارتفاع ویدیو &lt;code&gt;1080&lt;/code&gt; باشد و عرض آن مناسب با ارتفاع حساب شود
+&lt;/li&gt;
+&lt;li&gt;
+&lt;code&gt;25 r-&lt;/code&gt; تعداد فریم ها در هر ثانیه را مشخص می کند
+&lt;/li&gt;
+&lt;li&gt;
+&lt;code&gt;hide_banner-&lt;/code&gt; از &lt;code&gt;log&lt;/code&gt; زیاد خودداری می کند
+&lt;/li&gt;
+&lt;li&gt;
+&lt;code&gt;output.mp4&lt;/code&gt; نام فایل خروجی است
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;-&quot;&gt;جدا کردن صدا و تصویر از یک فایل ویدیو&lt;/h3&gt;
+&lt;h3 id=&quot;جدا-کردن-صدا-و-تصویر-از-یک-فایل-ویدیو&quot;&gt;جدا کردن صدا و تصویر از یک فایل ویدیو&lt;/h3&gt;
 &lt;p&gt;برای &lt;code&gt;extract&lt;/code&gt; کردن (جدا کردن)‌ صوت از ویدیو می توانید از این دستور استفاده کنید&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;ffmpeg -i video.mp4 -vn -c:a copy output-audio.aac&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&quot;-&quot;&gt;توضیح&lt;/h4&gt;
+&lt;div class=&quot;sourceCode&quot; id=&quot;cb2&quot;&gt;&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;a class=&quot;sourceLine&quot; id=&quot;cb2-1&quot; title=&quot;1&quot;&gt;&lt;span class=&quot;ex&quot;&gt;ffmpeg&lt;/span&gt; -i video.mp4 -vn -c:a copy output-audio.aac&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h5 id=&quot;توضیح-1&quot;&gt;توضیح&lt;/h5&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;vn-&lt;/code&gt; یعنی &lt;code&gt;no video&lt;/code&gt; یا در فایل خروجی ویدیو نباشد&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;c:a-&lt;/code&gt; کدک فایل صوتی را مشخص می کند که اینجا گفته ایم فقط کاپی شود&lt;/li&gt;
+&lt;li&gt;
+&lt;code&gt;vn-&lt;/code&gt; یعنی &lt;code&gt;no video&lt;/code&gt; یا در فایل خروجی ویدیو نباشد
+&lt;/li&gt;
+&lt;li&gt;
+&lt;code&gt;c:a-&lt;/code&gt; کدک فایل صوتی را مشخص می کند که اینجا گفته ایم فقط کاپی شود
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;همینطور اگر خواستیم ویدیو را از صوت جدا کنیم می توانیم به جای &lt;code&gt;-vn&lt;/code&gt; از &lt;code&gt;-an&lt;/code&gt; استفاده کنیم.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;سوال:‌ چطور بفهمیم یک فایل چه فرمت هایی را در خود جای داده است؟&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;فرمت های مختلف فایل های ویدیو مثل صندوقی برای فایل های ویدیو و صوت می باشند. به این صندوق container گفته می شود. هر فرمت ویدیو فقط قابلیت نگهداری فرمت های مشخصی را دارد. اگر می خواهید بدانید که فایل ویدیویی که در اختیار دارید چه فرمتی از ویدیو و صوت را در خود جای داده است می توانید از عبارت زیر استفاده کنید:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;ffprobe filename.mp4&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;sourceCode&quot; id=&quot;cb3&quot;&gt;&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;a class=&quot;sourceLine&quot; id=&quot;cb3-1&quot; title=&quot;1&quot;&gt;&lt;span class=&quot;ex&quot;&gt;ffprobe&lt;/span&gt; filename.mp4&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;code&gt;ffprobe&lt;/code&gt; ابزاری است که همراه با &lt;code&gt;ffmpeg&lt;/code&gt; روی سیستم شما نصب می شود و نیازی به نصب جداگانهٔ آن ندارید. خروجی این دستور به این صورت خواهد بود:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;ffprobe version ...
-  ...
-Input &lt;span class=&quot;comment&quot;&gt;#0, mov,mp4,m4a,3gp,3g2,mj2, from 'filename.mp4':&lt;/span&gt;
-  Metadata:
-    ...
-  Duration: 00:00:40.02, start: 0.000000, bitrate: 282 kb/s
-    Stream &lt;span class=&quot;comment&quot;&gt;#0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 1280x720 ...&lt;/span&gt;
-    ...
-    Stream &lt;span class=&quot;comment&quot;&gt;#0:1(und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s (default)&lt;/span&gt;
-    ...&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;sourceCode&quot; id=&quot;cb4&quot;&gt;&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;a class=&quot;sourceLine&quot; id=&quot;cb4-1&quot; title=&quot;1&quot;&gt;&lt;span class=&quot;ex&quot;&gt;ffprobe&lt;/span&gt; version ...&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb4-2&quot; title=&quot;2&quot;&gt;  &lt;span class=&quot;ex&quot;&gt;...&lt;/span&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb4-3&quot; title=&quot;3&quot;&gt;&lt;span class=&quot;ex&quot;&gt;Input&lt;/span&gt; &lt;span class=&quot;co&quot;&gt;#0, mov,mp4,m4a,3gp,3g2,mj2, from &amp;#39;filename.mp4&amp;#39;:&lt;/span&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb4-4&quot; title=&quot;4&quot;&gt;  &lt;span class=&quot;ex&quot;&gt;Metadata&lt;/span&gt;:&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb4-5&quot; title=&quot;5&quot;&gt;    &lt;span class=&quot;ex&quot;&gt;...&lt;/span&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb4-6&quot; title=&quot;6&quot;&gt;  &lt;span class=&quot;ex&quot;&gt;Duration&lt;/span&gt;: 00:00:40.02, start: 0.000000, bitrate: 282 kb/s&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb4-7&quot; title=&quot;7&quot;&gt;    &lt;span class=&quot;ex&quot;&gt;Stream&lt;/span&gt; &lt;span class=&quot;co&quot;&gt;#0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 1280x720 ...&lt;/span&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb4-8&quot; title=&quot;8&quot;&gt;    &lt;span class=&quot;ex&quot;&gt;...&lt;/span&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb4-9&quot; title=&quot;9&quot;&gt;    &lt;span class=&quot;ex&quot;&gt;Stream&lt;/span&gt; &lt;span class=&quot;co&quot;&gt;#0:1(und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s (default)&lt;/span&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb4-10&quot; title=&quot;10&quot;&gt;    &lt;span class=&quot;ex&quot;&gt;...&lt;/span&gt;&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;از خروجی بالا می توان فهمید که فایل مورد نظر صوت را با فرمت &lt;code&gt;aac&lt;/code&gt; در خود جای داده است.&lt;/p&gt;
-&lt;h3 id=&quot;-&quot;&gt;کوتاه کردن فایل مالتی میدیا&lt;/h3&gt;
+&lt;h3 id=&quot;کوتاه-کردن-فایل-مالتی-میدیا&quot;&gt;کوتاه کردن فایل مالتی میدیا&lt;/h3&gt;
 &lt;p&gt;برای جدا کردن بخشی از یک فایل ویدیو و یا صوت می توانید از یکی از عبارت های زیر استفاده کنید. عبارت اول از ثانیهٔ‌ دهم تا شش ثانیه بعد از آن و دومی از ثانیهٔ‌ دهم تا ثانیهٔ شانزدهم فایل را جدا می کنند. هر دو عین کار را انجام می دهند اما به دو صورت متفاوت نوشته شده اند&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;ffmpeg -ss 10 -t 6 -i input.mp3 output.mp3
-ffmpeg -ss 10 -to 16 -i input.mp3 output.mp3&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;-merging-&quot;&gt;یک جا کردن (merging) صدا و تصویر&lt;/h3&gt;
-&lt;p&gt;نام فایل ها را با فرمت زیر در یک فایل متنی بنویسید. اگر نام فایل هایتان دارای جای خالی (&lt;code&gt;space‍‍&lt;/code&gt;) و یا کرکترهای مخصوص هستند بهتر است نام فایل ها را داخل علامهٔ &lt;code&gt;&amp;quot;&lt;/code&gt; قرار دهید.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;file &lt;span class=&quot;string&quot;&gt;&quot;file001.mp4&quot;&lt;/span&gt;
-file &lt;span class=&quot;string&quot;&gt;&quot;file002.avi&quot;&lt;/span&gt;
-file &lt;span class=&quot;string&quot;&gt;&quot;file003.mkv&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;sourceCode&quot; id=&quot;cb5&quot;&gt;&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;a class=&quot;sourceLine&quot; id=&quot;cb5-1&quot; title=&quot;1&quot;&gt;&lt;span class=&quot;ex&quot;&gt;ffmpeg&lt;/span&gt; -ss 10 -t 6 -i input.mp3 output.mp3&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb5-2&quot; title=&quot;2&quot;&gt;&lt;span class=&quot;ex&quot;&gt;ffmpeg&lt;/span&gt; -ss 10 -to 16 -i input.mp3 output.mp3&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;یک-جا-کردن-merging-صدا-و-تصویر&quot;&gt;یک جا کردن (merging) صدا و تصویر&lt;/h3&gt;
+&lt;p&gt;نام فایل ها را با فرمت زیر در یک فایل متنی بنویسید. اگر نام فایل هایتان دارای جای خالی (&lt;code&gt;space‍‍&lt;/code&gt;) و یا کرکترهای مخصوص هستند بهتر است نام فایل ها را داخل علامهٔ &lt;code&gt;&quot;&lt;/code&gt; قرار دهید.&lt;/p&gt;
+&lt;div class=&quot;sourceCode&quot; id=&quot;cb6&quot;&gt;&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;a class=&quot;sourceLine&quot; id=&quot;cb6-1&quot; title=&quot;1&quot;&gt;&lt;span class=&quot;fu&quot;&gt;file&lt;/span&gt; &lt;span class=&quot;st&quot;&gt;&amp;quot;file001.mp4&amp;quot;&lt;/span&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb6-2&quot; title=&quot;2&quot;&gt;&lt;span class=&quot;fu&quot;&gt;file&lt;/span&gt; &lt;span class=&quot;st&quot;&gt;&amp;quot;file002.avi&amp;quot;&lt;/span&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb6-3&quot; title=&quot;3&quot;&gt;&lt;span class=&quot;fu&quot;&gt;file&lt;/span&gt; &lt;span class=&quot;st&quot;&gt;&amp;quot;file003.mkv&amp;quot;&lt;/span&gt;&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;بعد از به وجود آوردن فایل بالا با این کمند (دستور/&lt;code&gt;command&lt;/code&gt;) می توانید آنها را &lt;code&gt;merge&lt;/code&gt; کنید&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;ffpmeg -f concat -safe 0 -i files.txt -c copy output.mp4&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&quot;-&quot;&gt;توضیح&lt;/h4&gt;
+&lt;div class=&quot;sourceCode&quot; id=&quot;cb7&quot;&gt;&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;a class=&quot;sourceLine&quot; id=&quot;cb7-1&quot; title=&quot;1&quot;&gt;&lt;span class=&quot;ex&quot;&gt;ffpmeg&lt;/span&gt; -f concat -safe 0 -i files.txt -c copy output.mp4&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h5 id=&quot;توضیح-2&quot;&gt;توضیح&lt;/h5&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;0 safe-&lt;/code&gt; وقتی استفاده می شود که نام فایل ها دارای کرکتر &lt;code&gt;space&lt;/code&gt; (و یا کرکترهای مخصوص) باشند&lt;/li&gt;
+&lt;li&gt;
+&lt;code&gt;0 safe-&lt;/code&gt; وقتی استفاده می شود که نام فایل ها دارای کرکتر &lt;code&gt;space&lt;/code&gt; (و یا کرکترهای مخصوص) باشند
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;-&quot;&gt;تهیه اسکرین شات از ویدیو&lt;/h3&gt;
+&lt;h3 id=&quot;تهیه-اسکرین-شات-از-ویدیو&quot;&gt;تهیه اسکرین شات از ویدیو&lt;/h3&gt;
 &lt;p&gt;شاید بعضی وقت ها نیاز داشته باشید ویدیویتان را به یک سری عکس تبدیل کنید. مثلاً‌ اگر می خواهید از ویدیویتان یک &lt;code&gt;presentation&lt;/code&gt; تهیه کنید مجبورید تمام ویدیو را ببینید و هر جایی که مرتبط با کارتان بود &lt;code&gt;pause&lt;/code&gt; کنید و یک عکس از آن بگیرید. با عبارت زیر می توانید ویدیویتان را به یک سری عکس با فاصله زمانی یک ثانیه تبدیل کنید. وقتی کار این دستور تمام شد می توانید محل ذخیره عکس ها را باز کنید و عکس هایی که به درد نمی خورند را حذف کنید. اگر نیاز دارید عکس ها را با فاصلهٔ زمانی کمتری بگیرید مثلا &lt;code&gt;4&lt;/code&gt; عکس در یک ثانیه (یا یک عکس هر &lt;code&gt;0.25&lt;/code&gt; ثانیه) می توانید به جای &lt;code&gt;fps=1&lt;/code&gt; بنویسید &lt;code&gt;fps=1/4&lt;/code&gt; و یا اگر می خواهید بین هر عکس &lt;code&gt;5&lt;/code&gt; ثانیه فاصله باشد می توانید بنویسید &lt;code&gt;fps=5&lt;/code&gt;.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;ffmpeg -i video.mp4 -vf fps=1 &lt;span class=&quot;string&quot;&gt;&quot;screenshots/images_%06d.png&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&quot;-&quot;&gt;توضیح&lt;/h4&gt;
+&lt;div class=&quot;sourceCode&quot; id=&quot;cb8&quot;&gt;&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;a class=&quot;sourceLine&quot; id=&quot;cb8-1&quot; title=&quot;1&quot;&gt;&lt;span class=&quot;ex&quot;&gt;ffmpeg&lt;/span&gt; -i video.mp4 -vf fps=1 &lt;span class=&quot;st&quot;&gt;&amp;quot;screenshots/images_%06d.png&amp;quot;&lt;/span&gt;&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h5 id=&quot;توضیح-3&quot;&gt;توضیح&lt;/h5&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;fps&lt;/code&gt; مخفف ‍&lt;code&gt;frames per second&lt;/code&gt; است و مشخص می کند که هر چند فریم یک عکس گرفته شود&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;i-&lt;/code&gt; برای مشخص کردن فایل دخولی است&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;%06d&lt;/code&gt; فرمت نام عکس ها را مشخص می کند. &lt;code&gt;06d&lt;/code&gt; یعنی به نام هر عکس یک عدد شش رقمی که با صفر شروع می شود اضافه شود&lt;/li&gt;
+&lt;li&gt;
+&lt;code&gt;fps&lt;/code&gt; مخفف ‍&lt;code&gt;frames per second&lt;/code&gt; است و مشخص می کند که هر چند فریم یک عکس گرفته شود
+&lt;/li&gt;
+&lt;li&gt;
+&lt;code&gt;i-&lt;/code&gt; برای مشخص کردن فایل دخولی است
+&lt;/li&gt;
+&lt;li&gt;
+&lt;code&gt;%06d&lt;/code&gt; فرمت نام عکس ها را مشخص می کند. &lt;code&gt;06d&lt;/code&gt; یعنی به نام هر عکس یک عدد شش رقمی که با صفر شروع می شود اضافه شود
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;sync-&quot;&gt;sync کردن ویدیو و صوت&lt;/h3&gt;
+&lt;h3 id=&quot;sync-کردن-ویدیو-و-صوت&quot;&gt;sync کردن ویدیو و صوت&lt;/h3&gt;
 &lt;p&gt;اگر یک فایل ویدیو در اختیار دارید که صوت و تصویر آن با تفاوت زمانی پخش می شوند (&lt;code&gt;i.e. the audio and video are out of sync&lt;/code&gt;) می توانید با دستور زیر ویدیویتان را اصلاح کنید&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;ffmpeg.exe -i &lt;span class=&quot;string&quot;&gt;&quot;movie.mp4&quot;&lt;/span&gt; -itsoffset 3.84 -i &lt;span class=&quot;string&quot;&gt;&quot;movie.mp4&quot;&lt;/span&gt; -map 0:v -map 1:a -c copy &lt;span class=&quot;string&quot;&gt;&quot;movie-audio-delayed.mp4&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&quot;-&quot;&gt;توضیح&lt;/h4&gt;
+&lt;div class=&quot;sourceCode&quot; id=&quot;cb9&quot;&gt;&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;a class=&quot;sourceLine&quot; id=&quot;cb9-1&quot; title=&quot;1&quot;&gt;&lt;span class=&quot;ex&quot;&gt;ffmpeg.exe&lt;/span&gt; -i &lt;span class=&quot;st&quot;&gt;&amp;quot;movie.mp4&amp;quot;&lt;/span&gt; -itsoffset 3.84 -i &lt;span class=&quot;st&quot;&gt;&amp;quot;movie.mp4&amp;quot;&lt;/span&gt; -map 0:v -map 1:a -c copy &lt;span class=&quot;st&quot;&gt;&amp;quot;movie-audio-delayed.mp4&amp;quot;&lt;/span&gt;&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h5 id=&quot;توضیح-4&quot;&gt;توضیح&lt;/h5&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;itoffset-&lt;/code&gt; مخفف ‍&lt;code&gt;input timestamp offset&lt;/code&gt; است و مشخص می کند که شروع فایل دخولی از چه زمانی باشد. این پارامتر روی فایل دخولی که بعد از آن می آید اعمال می شود. یعنی در دستور بالا &lt;code&gt;movie.mp4&lt;/code&gt; دوم از ثانیهٔ &lt;code&gt;3.84&lt;/code&gt; شروع می شود&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;map 0:v -map 1:a-&lt;/code&gt; یعنی ویدیو را از فایل اول و صدا را از فایل دوم بگیر (که با تأخیر &lt;code&gt;3.84&lt;/code&gt; ثانیه شروع می شود). در اینجا فایل اول و دوم ما یکی هستند پس &lt;code&gt;movie.mp4&lt;/code&gt; دو بار تکرار شده است&lt;/li&gt;
+&lt;li&gt;
+&lt;code&gt;itoffset-&lt;/code&gt; مخفف ‍&lt;code&gt;input timestamp offset&lt;/code&gt; است و مشخص می کند که شروع فایل دخولی از چه زمانی باشد. این پارامتر روی فایل دخولی که بعد از آن می آید اعمال می شود. یعنی در دستور بالا &lt;code&gt;movie.mp4&lt;/code&gt; دوم از ثانیهٔ &lt;code&gt;3.84&lt;/code&gt; شروع می شود
+&lt;/li&gt;
+&lt;li&gt;
+&lt;code&gt;map 0:v -map 1:a-&lt;/code&gt; یعنی ویدیو را از فایل اول و صدا را از فایل دوم بگیر (که با تأخیر &lt;code&gt;3.84&lt;/code&gt; ثانیه شروع می شود). در اینجا فایل اول و دوم ما یکی هستند پس &lt;code&gt;movie.mp4&lt;/code&gt; دو بار تکرار شده است
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;-webcam-&quot;&gt;نمایش ویدیو از وبکم (webcam)&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;ffmpeg -f x11grab -r 30 -s 1920x1080 -i :0.0  out.mp4&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&quot;-&quot;&gt;توضیح&lt;/h4&gt;
+&lt;h3 id=&quot;نمایش-ویدیو-از-وبکم-webcam&quot;&gt;نمایش ویدیو از وبکم (webcam)&lt;/h3&gt;
+&lt;div class=&quot;sourceCode&quot; id=&quot;cb10&quot;&gt;&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;a class=&quot;sourceLine&quot; id=&quot;cb10-1&quot; title=&quot;1&quot;&gt;&lt;span class=&quot;ex&quot;&gt;ffmpeg&lt;/span&gt; -f x11grab -r 30 -s 1920x1080 -i :0.0  out.mp4&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h5 id=&quot;توضیح-5&quot;&gt;توضیح&lt;/h5&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;f x11grab-&lt;/code&gt; نام فرمتی است که می خواهیم &lt;code&gt;ffmpeg&lt;/code&gt; از آن استفاده کند&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;r-&lt;/code&gt; تعداد فریم ها در ثانیه را مشخص می کند&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;s-&lt;/code&gt; ابعاد ویدیو را مشخص می کند. این ابعاد باید مساوی یا کمتر از ابعاد صفحه نمایش تان باشد. برای پیدا کردن ابعاد صفحه نمایش از &lt;code&gt;command line&lt;/code&gt; می توانید از دستور زیر استفاده کنید&lt;/li&gt;
+&lt;li&gt;
+&lt;code&gt;f x11grab-&lt;/code&gt; نام فرمتی است که می خواهیم &lt;code&gt;ffmpeg&lt;/code&gt; از آن استفاده کند
+&lt;/li&gt;
+&lt;li&gt;
+&lt;code&gt;r-&lt;/code&gt; تعداد فریم ها در ثانیه را مشخص می کند
+&lt;/li&gt;
+&lt;li&gt;
+&lt;code&gt;s-&lt;/code&gt; ابعاد ویدیو را مشخص می کند. این ابعاد باید مساوی یا کمتر از ابعاد صفحه نمایش تان باشد. برای پیدا کردن ابعاد صفحه نمایش از &lt;code&gt;command line&lt;/code&gt; می توانید از دستور زیر استفاده کنید
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;xdpyinfo | grep dimensions&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;sourceCode&quot; id=&quot;cb11&quot;&gt;&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;a class=&quot;sourceLine&quot; id=&quot;cb11-1&quot; title=&quot;1&quot;&gt;&lt;span class=&quot;ex&quot;&gt;xdpyinfo&lt;/span&gt; &lt;span class=&quot;kw&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;fu&quot;&gt;grep&lt;/span&gt; dimensions&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;i-&lt;/code&gt; دخولی را مشخص می کند. در لینکس هر صفحه نمایش یک قیمت داده شده است. برای به دست آوردن این قیمت می توانید از دستور زیر استفاده کنید&lt;/li&gt;
+&lt;li&gt;
+&lt;code&gt;i-&lt;/code&gt; دخولی را مشخص می کند. در لینکس هر صفحه نمایش یک قیمت داده شده است. برای به دست آوردن این قیمت می توانید از دستور زیر استفاده کنید
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;variable&quot;&gt;$DISPLAY&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;اگر بیشتر از یک صفحه نمایش دارید قیمت هایی را که به هر صفحه نمایش مختص شده را می توانید با ابزار &lt;code&gt;xrandr&lt;/code&gt; به دست بیاورید. &lt;/p&gt;
-&lt;h3 id=&quot;-&quot;&gt;ضبط صدا از مایکروفون&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;ffmpeg -f pulse -i default out.aac&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&quot;-&quot;&gt;توضیح&lt;/h4&gt;
+&lt;div class=&quot;sourceCode&quot; id=&quot;cb12&quot;&gt;&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;a class=&quot;sourceLine&quot; id=&quot;cb12-1&quot; title=&quot;1&quot;&gt;&lt;span class=&quot;bu&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;va&quot;&gt;$DISPLAY&lt;/span&gt;&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;اگر بیشتر از یک صفحه نمایش دارید قیمت هایی را که به هر صفحه نمایش مختص شده را می توانید با ابزار &lt;code&gt;xrandr&lt;/code&gt; به دست بیاورید.&lt;/p&gt;
+&lt;h3 id=&quot;ضبط-صدا-از-مایکروفون&quot;&gt;ضبط صدا از مایکروفون&lt;/h3&gt;
+&lt;div class=&quot;sourceCode&quot; id=&quot;cb13&quot;&gt;&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;a class=&quot;sourceLine&quot; id=&quot;cb13-1&quot; title=&quot;1&quot;&gt;&lt;span class=&quot;ex&quot;&gt;ffmpeg&lt;/span&gt; -f pulse -i default out.aac&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h5 id=&quot;توضیح-6&quot;&gt;توضیح&lt;/h5&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;f-&lt;/code&gt; نام فرمتی است که برای ضبط استفاده می کنید. برای مشاهده لیست فرمت هایی که روی سیستم تان نصب شده از &lt;code&gt;ffmpeg -formats&lt;/code&gt; استفاده کنید.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;i-&lt;/code&gt; نام دخولی است. در اینجا دخولی پیش فرض &lt;code&gt;default&lt;/code&gt; سیستم را انتخاب کرده ایم، یعنی مایکروفون تان.&lt;/li&gt;
+&lt;li&gt;
+&lt;code&gt;f-&lt;/code&gt; نام فرمتی است که برای ضبط استفاده می کنید. برای مشاهده لیست فرمت هایی که روی سیستم تان نصب شده از &lt;code&gt;ffmpeg -formats&lt;/code&gt; استفاده کنید.
+&lt;/li&gt;
+&lt;li&gt;
+&lt;code&gt;i-&lt;/code&gt; نام دخولی است. در اینجا دخولی پیش فرض &lt;code&gt;default&lt;/code&gt; سیستم را انتخاب کرده ایم، یعنی مایکروفون تان.
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;-&quot;&gt;جمع بندی:‌ ضبط ویدیو از وبکم و صفحه نمایش و صدا از مایکروفون&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# play from the webcam&lt;/span&gt;
-ffplay -f video4linux2 -i /dev/video0 -video_size 320x240 -fflags nobuffer
-&lt;span class=&quot;comment&quot;&gt;# record from the screen&lt;/span&gt;
-ffmpeg -f pulse -ac 2 -i default -f x11grab -r 30 -s 1920x1080 -i :0.0 -vcodec libx264 -preset ultrafast out.mp4&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;جمع-بندی-ضبط-ویدیو-از-وبکم-و-صفحه-نمایش-و-صدا-از-مایکروفون&quot;&gt;جمع بندی:‌ ضبط ویدیو از وبکم و صفحه نمایش و صدا از مایکروفون&lt;/h3&gt;
+&lt;div class=&quot;sourceCode&quot; id=&quot;cb14&quot;&gt;&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;a class=&quot;sourceLine&quot; id=&quot;cb14-1&quot; title=&quot;1&quot;&gt;&lt;span class=&quot;co&quot;&gt;# play from the webcam&lt;/span&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb14-2&quot; title=&quot;2&quot;&gt;&lt;span class=&quot;ex&quot;&gt;ffplay&lt;/span&gt; -f video4linux2 -i /dev/video0 -video_size 320x240 -fflags nobuffer&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb14-3&quot; title=&quot;3&quot;&gt;&lt;span class=&quot;co&quot;&gt;# record from the screen&lt;/span&gt;&lt;/a&gt;
+&lt;a class=&quot;sourceLine&quot; id=&quot;cb14-4&quot; title=&quot;4&quot;&gt;&lt;span class=&quot;ex&quot;&gt;ffmpeg&lt;/span&gt; -f pulse -ac 2 -i default -f x11grab -r 30 -s 1920x1080 -i :0.0 -vcodec libx264 -preset ultrafast out.mp4&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;توجه داشته باشید که دو دستور بالا را باید در دو &lt;code&gt;shell&lt;/code&gt; جداگانه اجرا کنید.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/articles/ffmpeg-rocks/capture.jpg&quot; alt=&quot;Screen Capture&quot;&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;-&quot;&gt;منابع&lt;/h3&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://hamidsafdari.github.io/articles/ffmpeg-rocks/capture.jpg&quot; alt=&quot;Screen Capture&quot; /&gt;&lt;figcaption&gt;Screen Capture&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h3 id=&quot;منابع&quot;&gt;منابع&lt;/h3&gt;
 &lt;div class=&quot;sources&quot;&gt;
-
-&lt;p&gt;  &lt;a href=&quot;https://trac.ffmpeg.org/wiki/Capture/ALSA#Recordaudiofromyourmicrophone&quot;&gt;https://trac.ffmpeg.org/wiki/Capture/ALSA#Recordaudiofromyourmicrophone&lt;/a&gt;
-  &lt;a href=&quot;https://stackoverflow.com/a/22082953/2139684&quot;&gt;https://stackoverflow.com/a/22082953/2139684&lt;/a&gt; 
-  &lt;a href=&quot;https://ffmpeg.org/ffmpeg.html&quot;&gt;https://ffmpeg.org/ffmpeg.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://trac.ffmpeg.org/wiki/Capture/ALSA#Recordaudiofromyourmicrophone&quot;&gt;https://trac.ffmpeg.org/wiki/Capture/ALSA#Recordaudiofromyourmicrophone&lt;/a&gt; &lt;a href=&quot;https://stackoverflow.com/a/22082953/2139684&quot;&gt;https://stackoverflow.com/a/22082953/2139684&lt;/a&gt; &lt;a href=&quot;https://ffmpeg.org/ffmpeg.html&quot;&gt;https://ffmpeg.org/ffmpeg.html&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 </description>
     </item>
   </channel>

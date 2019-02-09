@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
-    <title>لینکس،‌ بهشت مالتی میدیا: ffmpeg - Brain Dump
+    <title>لینکس،‌ بهشت مالتی میدیا: ffmpeg - Brain Offloaded
     </title>
     <link rel="alternate" href="https://hamidsafdari.github.io/feed.xml" type="application/rss+xml" title="">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Anonymous+Pro:400,700,400italic,700italic|Merriweather:400,700,300">
@@ -19,134 +19,315 @@
         <h1>لینکس،‌ بهشت مالتی میدیا: ffmpeg</h1>
         <p class="author"><span class="author"><a href="mailto:hamidsafdari22@gmail.com">Hamid Safdari</a></span>
         </p>
+        <div class="field is-grouped is-grouped-multiline tag-container">
+          <div class="control">
+            <div class="tags has-addons"><a class="tag is-link" href="/archive.html#tags=linux">linux</a></div>
+          </div>
+          <div class="control">
+            <div class="tags has-addons"><a class="tag is-link" href="/archive.html#tags= ffmpeg">ffmpeg</a></div>
+          </div>
+          <div class="control">
+            <div class="tags has-addons"><a class="tag is-link" href="/archive.html#tags= persian">persian</a></div>
+          </div>
+          <div class="control">
+            <div class="tags has-addons"><a class="tag is-link" href="/archive.html#tags= multimedia">multimedia</a></div>
+          </div>
+        </div>
       </div>
     </header>
     <div id="content">
       <div class="content-wrap">
         <article class="article">
-          <section class="content"><p>در سیستم عاملی مثل ویندوز یکی از کارهایی که به نظر مشکل می آید کار با فایل های مالتی میدیا است. شاید بخواهید یک فایل صوتی را به فرمتی تبدیل کنید که بتوانید آن را با موبایلتان پخش کنید. مثلا از <code>ogg</code> به <code>mp3</code>. اگر از ویندوز استفاده می کنید مجبور خواهید بود ابزاری را از اینترت دانلود کنید. در آن صورت هم این ابزار به شما چند قابلیت ساده می دهد و برای قابلیت های بیشتر شاید مجبور باشید نسخهٔ‌ premium برنامه را بخرید. اگر حوصله تایپ کردن چند خط در کمند لاین (<code>command line</code>) را داشته باشید لینکس ابزاری دارد که می تواند پاسخ گوی تقریباً تمامی نیازهای مالتی میدیای شما<span class="widont">&nbsp;</span>باشد.</p>
-<hr>
+          <section class="content"><!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Page Title</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <style>
+    .task-list-item {
+      list-style-type: none;
+    }
+    .task-list-item-checkbox {
+      margin-left: -1.6em;
+    }
+  </style>
+</head>
+<body>
+<nav id="TOC">
+<ul>
+<li><a href="/articles/ffmpeg-rocks/#تبدیل-فایل-مالتی-میدیا-از-یک-فرمت-به-فرمت-دیگر">تبدیل فایل مالتی میدیا از یک فرمت به فرمت<span class="widont">&nbsp;</span>دیگر</a></li>
+<li><a href="/articles/ffmpeg-rocks/#جدا-کردن-صدا-و-تصویر-از-یک-فایل-ویدیو">جدا کردن صدا و تصویر از یک فایل<span class="widont">&nbsp;</span>ویدیو</a></li>
+<li><a href="/articles/ffmpeg-rocks/#کوتاه-کردن-فایل-مالتی-میدیا">کوتاه کردن فایل مالتی<span class="widont">&nbsp;</span>میدیا</a></li>
+<li><a href="/articles/ffmpeg-rocks/#یک-جا-کردن-merging-صدا-و-تصویر">یک جا کردن (merging) صدا و<span class="widont">&nbsp;</span>تصویر</a></li>
+<li><a href="/articles/ffmpeg-rocks/#تهیه-اسکرین-شات-از-ویدیو">تهیه اسکرین شات از<span class="widont">&nbsp;</span>ویدیو</a></li>
+<li><a href="/articles/ffmpeg-rocks/#sync-کردن-ویدیو-و-صوت">sync کردن ویدیو و<span class="widont">&nbsp;</span>صوت</a></li>
+<li><a href="/articles/ffmpeg-rocks/#نمایش-ویدیو-از-وبکم-webcam">نمایش ویدیو از وبکم<span class="widont">&nbsp;</span>(webcam)</a></li>
+<li><a href="/articles/ffmpeg-rocks/#ضبط-صدا-از-مایکروفون">ضبط صدا از<span class="widont">&nbsp;</span>مایکروفون</a></li>
+<li><a href="/articles/ffmpeg-rocks/#جمع-بندی-ضبط-ویدیو-از-وبکم-و-صفحه-نمایش-و-صدا-از-مایکروفون">جمع بندی:‌ ضبط ویدیو از وبکم و صفحه نمایش و صدا از<span class="widont">&nbsp;</span>مایکروفون</a></li>
+<li><a href="/articles/ffmpeg-rocks/#منابع">منابع</a></li>
+</ul>
+</nav>
+<p>در سیستم عاملی مثل ویندوز یکی از کارهایی که به نظر مشکل می آید کار با فایل های مالتی میدیا است. شاید بخواهید یک فایل صوتی را به فرمتی تبدیل کنید که بتوانید آن را با موبایلتان پخش کنید. مثلا از <code>ogg</code> به <code>mp3</code>. اگر از ویندوز استفاده می کنید مجبور خواهید بود ابزاری را از اینترت دانلود کنید. در آن صورت هم این ابزار به شما چند قابلیت ساده می دهد و برای قابلیت های بیشتر شاید مجبور باشید نسخهٔ‌ premium برنامه را بخرید. اگر حوصله تایپ کردن چند خط در کمند لاین (<code>command line</code>) را داشته باشید لینکس ابزاری دارد که می تواند پاسخ گوی تقریباً تمامی نیازهای مالتی میدیای شما<span class="widont">&nbsp;</span>باشد.</p>
+<hr />
 <p>این ابزار عبارت است از <code>ffmpeg</code>. شاید قبلا این نام را شنیده باشید اما به احتمال زیاد نمی دانستید که این برنامه چه قابلیت هایی دارد. چند تا از قابلیت هایی که <code>ffmpeg</code> به شما می دهد عبارت اند<span class="widont">&nbsp;</span>از:</p>
 <ul>
-<li>تبدیل از یک فرمت مالتی میدیا به فرمت<span class="widont">&nbsp;</span>دیگر</li>
-<li>جدا کردن صدا و تصویر از فایل<span class="widont">&nbsp;</span>ویدیو</li>
-<li>کوتاه کردن فایل مالتی<span class="widont">&nbsp;</span>میدیا</li>
-<li>یک جا کردن (<code>merging</code>) صدا و<span class="widont">&nbsp;</span>تصویر</li>
-<li>تهیه اسکرین شات از<span class="widont">&nbsp;</span>ویدیو</li>
-<li><code>sync</code> کردن ویدیو و<span class="widont">&nbsp;</span>صوت</li>
-<li>نمایش ویدیو از وبکم<span class="widont">&nbsp;</span>(webcam)</li>
-<li>فیلم گرفتن از صفحهٔ نمایش (screen<span class="widont">&nbsp;</span>capture)</li>
+<li>
+تبدیل از یک فرمت مالتی میدیا به فرمت<span class="widont">&nbsp;</span>دیگر
+</li>
+<li>
+جدا کردن صدا و تصویر از فایل<span class="widont">&nbsp;</span>ویدیو
+</li>
+<li>
+کوتاه کردن فایل مالتی<span class="widont">&nbsp;</span>میدیا
+</li>
+<li>
+یک جا کردن (<code>merging</code>) صدا و<span class="widont">&nbsp;</span>تصویر
+</li>
+<li>
+تهیه اسکرین شات از<span class="widont">&nbsp;</span>ویدیو
+</li>
+<li>
+<code>sync</code> کردن ویدیو و<span class="widont">&nbsp;</span>صوت
+</li>
+<li>
+نمایش ویدیو از وبکم<span class="widont">&nbsp;</span>(webcam)
+</li>
+<li>
+فیلم گرفتن از صفحهٔ نمایش (screen<span class="widont">&nbsp;</span>capture)
+</li>
 </ul>
 <p>استفاده از <code>ffmpeg</code> دو مزیت مهم دارد. اول اینکه برای انجام اکثر این کارها فقط به یک دستور <code>command</code> نیاز دارید. فقط باید نام فایل را ذکر کنید و بدانید چه پارامترهایی را باید به <code>ffmpeg</code> بدهید. نکته دوم اینکه <code>ffmpeg</code> از حجم بسیار کمی برخوردار است. <code>ffmpeg</code> به صورت <code>archive</code> کمتر از <code>9MB</code> حجم دارد. فرض کنید بعد از نصب حداکثر به <code>30MB</code> فضا نیاز داشته باشد. اگر از یک محیط گرافیکی کم حجم مثل <code>i3wm</code> استفاده کنید حداکثر <code>100MB RAM</code> را اشغال می کند. پس اگر سیستم شما <code>4GB RAM</code> داشته باشد برایتان چیزی حدود <code>4096 - 150 = 3946 MB</code> باقی می<span class="widont">&nbsp;</span>ماند.</p>
-<h3 id="-">تبدیل فایل مالتی میدیا از یک فرمت به فرمت<span class="widont">&nbsp;</span>دیگر</h3>
+<h3 id="تبدیل-فایل-مالتی-میدیا-از-یک-فرمت-به-فرمت-دیگر">تبدیل فایل مالتی میدیا از یک فرمت به فرمت<span class="widont">&nbsp;</span>دیگر</h3>
 <p>برای تبدیل کردن یک فایل مالتی میدیا از یک فرمت به فرمت دیگر می توانید از دستور زیر استفاده کنید. توجه داشته باشید تبدیل فرمت یکی از کارهایی است که وقت گیر است و به حداکثر توان کمپیوتر شما نیاز<span class="widont">&nbsp;</span>دارد</p>
-<pre><code class="language-bash">ffmpeg -i inputfile.webm -f mp4 -c:v libx264 -preset ultrafast -acodec aac -vf scale=-1:1080 -r 25 -hide_banner <span class="string">"output.mp4"</span></code></pre>
-<h4 id="-">توضیح</h4>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb1-1" title="1"><span class="ex">ffmpeg</span> -i inputfile.webm -f mp4 -c:v libx264 -preset ultrafast -acodec aac -vf scale=-1:1080 -r 25 -hide_banner <span class="st">&quot;output.mp4&quot;</span></a></code></pre></div>
+<h5 id="توضیح">توضیح</h5>
 <ul>
-<li><code>i-</code> فایل دخولی را مشخص می<span class="widont">&nbsp;</span>کند</li>
-<li><code>f-</code> فرمت فایل نهایی<span class="widont">&nbsp;</span>است</li>
-<li><code>v:c-</code> مشخص می کند برای ویدیو از چه کدکی <code>codec</code> استفاده شود</li>
-<li><code>preset-</code> مشخص کننده تنظیمات پیش فرضی است که در سرعت و کیفیت فایل خروجی نقش<span class="widont">&nbsp;</span>دارند</li>
-<li><code>acodec-</code> مشخص می کند برای صدای فایل خروجی از چه کدکی استفاده<span class="widont">&nbsp;</span>شود</li>
-<li><code>vf-</code> مخفف ‍<code>video filter</code> هست</li>
-<li><code>scale</code> فیلتری است که به ‍<code>vf-</code> داده شده و ابعاد فایل خروجی را تنظیم می کند. <code>1:1080-</code> یعنی ارتفاع ویدیو <code>1080</code> باشد و عرض آن مناسب با ارتفاع حساب<span class="widont">&nbsp;</span>شود</li>
-<li><code>25 r-</code> تعداد فریم ها در هر ثانیه را مشخص می<span class="widont">&nbsp;</span>کند</li>
-<li><code>hide_banner-</code> از <code>log</code> زیاد خودداری می<span class="widont">&nbsp;</span>کند</li>
-<li><code>output.mp4</code> نام فایل خروجی<span class="widont">&nbsp;</span>است</li>
+<li>
+<code>i-</code> فایل دخولی را مشخص می<span class="widont">&nbsp;</span>کند
+</li>
+<li>
+<code>f-</code> فرمت فایل نهایی<span class="widont">&nbsp;</span>است
+</li>
+<li>
+<code>v:c-</code> مشخص می کند برای ویدیو از چه کدکی <code>codec</code> استفاده شود
+</li>
+<li>
+<code>preset-</code> مشخص کننده تنظیمات پیش فرضی است که در سرعت و کیفیت فایل خروجی نقش<span class="widont">&nbsp;</span>دارند
+</li>
+<li>
+<code>acodec-</code> مشخص می کند برای صدای فایل خروجی از چه کدکی استفاده<span class="widont">&nbsp;</span>شود
+</li>
+<li>
+<code>vf-</code> مخفف ‍<code>video filter</code> هست
+</li>
+<li>
+<code>scale</code> فیلتری است که به ‍<code>vf-</code> داده شده و ابعاد فایل خروجی را تنظیم می کند. <code>1:1080-</code> یعنی ارتفاع ویدیو <code>1080</code> باشد و عرض آن مناسب با ارتفاع حساب<span class="widont">&nbsp;</span>شود
+</li>
+<li>
+<code>25 r-</code> تعداد فریم ها در هر ثانیه را مشخص می<span class="widont">&nbsp;</span>کند
+</li>
+<li>
+<code>hide_banner-</code> از <code>log</code> زیاد خودداری می<span class="widont">&nbsp;</span>کند
+</li>
+<li>
+<code>output.mp4</code> نام فایل خروجی<span class="widont">&nbsp;</span>است
+</li>
 </ul>
-<h3 id="-">جدا کردن صدا و تصویر از یک فایل<span class="widont">&nbsp;</span>ویدیو</h3>
+<h3 id="جدا-کردن-صدا-و-تصویر-از-یک-فایل-ویدیو">جدا کردن صدا و تصویر از یک فایل<span class="widont">&nbsp;</span>ویدیو</h3>
 <p>برای <code>extract</code> کردن (جدا کردن)‌ صوت از ویدیو می توانید از این دستور استفاده<span class="widont">&nbsp;</span>کنید</p>
-<pre><code class="language-bash">ffmpeg -i video.mp4 -vn -c:a copy output-audio.aac</code></pre>
-<h4 id="-">توضیح</h4>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb2-1" title="1"><span class="ex">ffmpeg</span> -i video.mp4 -vn -c:a copy output-audio.aac</a></code></pre></div>
+<h5 id="توضیح-1">توضیح</h5>
 <ul>
-<li><code>vn-</code> یعنی <code>no video</code> یا در فایل خروجی ویدیو<span class="widont">&nbsp;</span>نباشد</li>
-<li><code>c:a-</code> کدک فایل صوتی را مشخص می کند که اینجا گفته ایم فقط کاپی<span class="widont">&nbsp;</span>شود</li>
+<li>
+<code>vn-</code> یعنی <code>no video</code> یا در فایل خروجی ویدیو<span class="widont">&nbsp;</span>نباشد
+</li>
+<li>
+<code>c:a-</code> کدک فایل صوتی را مشخص می کند که اینجا گفته ایم فقط کاپی<span class="widont">&nbsp;</span>شود
+</li>
 </ul>
 <p>همینطور اگر خواستیم ویدیو را از صوت جدا کنیم می توانیم به جای <code>-vn</code> از <code>-an</code> استفاده کنیم.</p>
 <p><strong>سوال:‌ چطور بفهمیم یک فایل چه فرمت هایی را در خود جای داده<span class="widont">&nbsp;</span>است؟</strong></p>
 <p>فرمت های مختلف فایل های ویدیو مثل صندوقی برای فایل های ویدیو و صوت می باشند. به این صندوق container گفته می شود. هر فرمت ویدیو فقط قابلیت نگهداری فرمت های مشخصی را دارد. اگر می خواهید بدانید که فایل ویدیویی که در اختیار دارید چه فرمتی از ویدیو و صوت را در خود جای داده است می توانید از عبارت زیر استفاده<span class="widont">&nbsp;</span>کنید:</p>
-<pre><code class="language-bash">ffprobe filename.mp4</code></pre>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb3-1" title="1"><span class="ex">ffprobe</span> filename.mp4</a></code></pre></div>
 <p><code>ffprobe</code> ابزاری است که همراه با <code>ffmpeg</code> روی سیستم شما نصب می شود و نیازی به نصب جداگانهٔ آن ندارید. خروجی این دستور به این صورت خواهد<span class="widont">&nbsp;</span>بود:</p>
-<pre><code class="language-bash">ffprobe version ...
-  ...
-Input <span class="comment">#0, mov,mp4,m4a,3gp,3g2,mj2, from 'filename.mp4':</span>
-  Metadata:
-    ...
-  Duration: 00:00:40.02, start: 0.000000, bitrate: 282 kb/s
-    Stream <span class="comment">#0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 1280x720 ...</span>
-    ...
-    Stream <span class="comment">#0:1(und): Audio: aac (<span class="caps">LC</span>) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s (default)</span>
-    ...</code></pre>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb4-1" title="1"><span class="ex">ffprobe</span> version ...</a>
+<a class="sourceLine" id="cb4-2" title="2">  <span class="ex">...</span></a>
+<a class="sourceLine" id="cb4-3" title="3"><span class="ex">Input</span> <span class="co">#0, mov,mp4,m4a,3gp,3g2,mj2, from &#39;filename.mp4&#39;:</span></a>
+<a class="sourceLine" id="cb4-4" title="4">  <span class="ex">Metadata</span>:</a>
+<a class="sourceLine" id="cb4-5" title="5">    <span class="ex">...</span></a>
+<a class="sourceLine" id="cb4-6" title="6">  <span class="ex">Duration</span>: 00:00:40.02, start: 0.000000, bitrate: 282 kb/s</a>
+<a class="sourceLine" id="cb4-7" title="7">    <span class="ex">Stream</span> <span class="co">#0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 1280x720 ...</span></a>
+<a class="sourceLine" id="cb4-8" title="8">    <span class="ex">...</span></a>
+<a class="sourceLine" id="cb4-9" title="9">    <span class="ex">Stream</span> <span class="co">#0:1(und): Audio: aac (<span class="caps">LC</span>) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s (default)</span></a>
+<a class="sourceLine" id="cb4-10" title="10">    <span class="ex">...</span></a></code></pre></div>
 <p>از خروجی بالا می توان فهمید که فایل مورد نظر صوت را با فرمت <code>aac</code> در خود جای داده<span class="widont">&nbsp;</span>است.</p>
-<h3 id="-">کوتاه کردن فایل مالتی<span class="widont">&nbsp;</span>میدیا</h3>
+<h3 id="کوتاه-کردن-فایل-مالتی-میدیا">کوتاه کردن فایل مالتی<span class="widont">&nbsp;</span>میدیا</h3>
 <p>برای جدا کردن بخشی از یک فایل ویدیو و یا صوت می توانید از یکی از عبارت های زیر استفاده کنید. عبارت اول از ثانیهٔ‌ دهم تا شش ثانیه بعد از آن و دومی از ثانیهٔ‌ دهم تا ثانیهٔ شانزدهم فایل را جدا می کنند. هر دو عین کار را انجام می دهند اما به دو صورت متفاوت نوشته شده<span class="widont">&nbsp;</span>اند</p>
-<pre><code class="language-bash">ffmpeg -ss 10 -t 6 -i input.mp3 output.mp3
-ffmpeg -ss 10 -to 16 -i input.mp3 output.mp3</code></pre>
-<h3 id="-merging-">یک جا کردن (merging) صدا و<span class="widont">&nbsp;</span>تصویر</h3>
-<p>نام فایل ها را با فرمت زیر در یک فایل متنی بنویسید. اگر نام فایل هایتان دارای جای خالی (<code>space‍‍</code>) و یا کرکترهای مخصوص هستند بهتر است نام فایل ها را داخل علامهٔ <code>&quot;</code> قرار دهید.</p>
-<pre><code class="language-bash">file <span class="string">"file001.mp4"</span>
-file <span class="string">"file002.avi"</span>
-file <span class="string">"file003.mkv"</span></code></pre>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb5-1" title="1"><span class="ex">ffmpeg</span> -ss 10 -t 6 -i input.mp3 output.mp3</a>
+<a class="sourceLine" id="cb5-2" title="2"><span class="ex">ffmpeg</span> -ss 10 -to 16 -i input.mp3 output.mp3</a></code></pre></div>
+<h3 id="یک-جا-کردن-merging-صدا-و-تصویر">یک جا کردن (merging) صدا و<span class="widont">&nbsp;</span>تصویر</h3>
+<p>نام فایل ها را با فرمت زیر در یک فایل متنی بنویسید. اگر نام فایل هایتان دارای جای خالی (<code>space‍‍</code>) و یا کرکترهای مخصوص هستند بهتر است نام فایل ها را داخل علامهٔ <code>"</code> قرار دهید.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb6-1" title="1"><span class="fu">file</span> <span class="st">&quot;file001.mp4&quot;</span></a>
+<a class="sourceLine" id="cb6-2" title="2"><span class="fu">file</span> <span class="st">&quot;file002.avi&quot;</span></a>
+<a class="sourceLine" id="cb6-3" title="3"><span class="fu">file</span> <span class="st">&quot;file003.mkv&quot;</span></a></code></pre></div>
 <p>بعد از به وجود آوردن فایل بالا با این کمند (دستور/<code>command</code>) می توانید آنها را <code>merge</code> کنید</p>
-<pre><code class="language-bash">ffpmeg -f concat -safe 0 -i files.txt -c copy output.mp4</code></pre>
-<h4 id="-">توضیح</h4>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb7-1" title="1"><span class="ex">ffpmeg</span> -f concat -safe 0 -i files.txt -c copy output.mp4</a></code></pre></div>
+<h5 id="توضیح-2">توضیح</h5>
 <ul>
-<li><code>0 safe-</code> وقتی استفاده می شود که نام فایل ها دارای کرکتر <code>space</code> (و یا کرکترهای مخصوص)<span class="widont">&nbsp;</span>باشند</li>
+<li>
+<code>0 safe-</code> وقتی استفاده می شود که نام فایل ها دارای کرکتر <code>space</code> (و یا کرکترهای مخصوص)<span class="widont">&nbsp;</span>باشند
+</li>
 </ul>
-<h3 id="-">تهیه اسکرین شات از<span class="widont">&nbsp;</span>ویدیو</h3>
+<h3 id="تهیه-اسکرین-شات-از-ویدیو">تهیه اسکرین شات از<span class="widont">&nbsp;</span>ویدیو</h3>
 <p>شاید بعضی وقت ها نیاز داشته باشید ویدیویتان را به یک سری عکس تبدیل کنید. مثلاً‌ اگر می خواهید از ویدیویتان یک <code>presentation</code> تهیه کنید مجبورید تمام ویدیو را ببینید و هر جایی که مرتبط با کارتان بود <code>pause</code> کنید و یک عکس از آن بگیرید. با عبارت زیر می توانید ویدیویتان را به یک سری عکس با فاصله زمانی یک ثانیه تبدیل کنید. وقتی کار این دستور تمام شد می توانید محل ذخیره عکس ها را باز کنید و عکس هایی که به درد نمی خورند را حذف کنید. اگر نیاز دارید عکس ها را با فاصلهٔ زمانی کمتری بگیرید مثلا <code>4</code> عکس در یک ثانیه (یا یک عکس هر <code>0.25</code> ثانیه) می توانید به جای <code>fps=1</code> بنویسید <code>fps=1/4</code> و یا اگر می خواهید بین هر عکس <code>5</code> ثانیه فاصله باشد می توانید بنویسید <code>fps=5</code>.</p>
-<pre><code class="language-bash">ffmpeg -i video.mp4 -vf fps=1 <span class="string">"screenshots/images_%06d.png"</span></code></pre>
-<h4 id="-">توضیح</h4>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb8-1" title="1"><span class="ex">ffmpeg</span> -i video.mp4 -vf fps=1 <span class="st">&quot;screenshots/images_%06d.png&quot;</span></a></code></pre></div>
+<h5 id="توضیح-3">توضیح</h5>
 <ul>
-<li><code>fps</code> مخفف ‍<code>frames per second</code> است و مشخص می کند که هر چند فریم یک عکس گرفته<span class="widont">&nbsp;</span>شود</li>
-<li><code>i-</code> برای مشخص کردن فایل دخولی<span class="widont">&nbsp;</span>است</li>
-<li><code>%06d</code> فرمت نام عکس ها را مشخص می کند. <code>06d</code> یعنی به نام هر عکس یک عدد شش رقمی که با صفر شروع می شود اضافه<span class="widont">&nbsp;</span>شود</li>
+<li>
+<code>fps</code> مخفف ‍<code>frames per second</code> است و مشخص می کند که هر چند فریم یک عکس گرفته<span class="widont">&nbsp;</span>شود
+</li>
+<li>
+<code>i-</code> برای مشخص کردن فایل دخولی<span class="widont">&nbsp;</span>است
+</li>
+<li>
+<code>%06d</code> فرمت نام عکس ها را مشخص می کند. <code>06d</code> یعنی به نام هر عکس یک عدد شش رقمی که با صفر شروع می شود اضافه<span class="widont">&nbsp;</span>شود
+</li>
 </ul>
-<h3 id="sync-">sync کردن ویدیو و<span class="widont">&nbsp;</span>صوت</h3>
+<h3 id="sync-کردن-ویدیو-و-صوت">sync کردن ویدیو و<span class="widont">&nbsp;</span>صوت</h3>
 <p>اگر یک فایل ویدیو در اختیار دارید که صوت و تصویر آن با تفاوت زمانی پخش می شوند (<code>i.e. the audio and video are out of sync</code>) می توانید با دستور زیر ویدیویتان را اصلاح<span class="widont">&nbsp;</span>کنید</p>
-<pre><code class="language-bash">ffmpeg.exe -i <span class="string">"movie.mp4"</span> -itsoffset 3.84 -i <span class="string">"movie.mp4"</span> -map 0:v -map 1:a -c copy <span class="string">"movie-audio-delayed.mp4"</span></code></pre>
-<h4 id="-">توضیح</h4>
+<div class="sourceCode" id="cb9"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb9-1" title="1"><span class="ex">ffmpeg.exe</span> -i <span class="st">&quot;movie.mp4&quot;</span> -itsoffset 3.84 -i <span class="st">&quot;movie.mp4&quot;</span> -map 0:v -map 1:a -c copy <span class="st">&quot;movie-audio-delayed.mp4&quot;</span></a></code></pre></div>
+<h5 id="توضیح-4">توضیح</h5>
 <ul>
-<li><code>itoffset-</code> مخفف ‍<code>input timestamp offset</code> است و مشخص می کند که شروع فایل دخولی از چه زمانی باشد. این پارامتر روی فایل دخولی که بعد از آن می آید اعمال می شود. یعنی در دستور بالا <code>movie.mp4</code> دوم از ثانیهٔ <code>3.84</code> شروع می<span class="widont">&nbsp;</span>شود</li>
-<li><code>map 0:v -map 1:a-</code> یعنی ویدیو را از فایل اول و صدا را از فایل دوم بگیر (که با تأخیر <code>3.84</code> ثانیه شروع می شود). در اینجا فایل اول و دوم ما یکی هستند پس <code>movie.mp4</code> دو بار تکرار شده<span class="widont">&nbsp;</span>است</li>
+<li>
+<code>itoffset-</code> مخفف ‍<code>input timestamp offset</code> است و مشخص می کند که شروع فایل دخولی از چه زمانی باشد. این پارامتر روی فایل دخولی که بعد از آن می آید اعمال می شود. یعنی در دستور بالا <code>movie.mp4</code> دوم از ثانیهٔ <code>3.84</code> شروع می<span class="widont">&nbsp;</span>شود
+</li>
+<li>
+<code>map 0:v -map 1:a-</code> یعنی ویدیو را از فایل اول و صدا را از فایل دوم بگیر (که با تأخیر <code>3.84</code> ثانیه شروع می شود). در اینجا فایل اول و دوم ما یکی هستند پس <code>movie.mp4</code> دو بار تکرار شده<span class="widont">&nbsp;</span>است
+</li>
 </ul>
-<h3 id="-webcam-">نمایش ویدیو از وبکم<span class="widont">&nbsp;</span>(webcam)</h3>
-<pre><code class="language-bash">ffmpeg -f x11grab -r 30 -s 1920x1080 -i :0.0  out.mp4</code></pre>
-<h4 id="-">توضیح</h4>
+<h3 id="نمایش-ویدیو-از-وبکم-webcam">نمایش ویدیو از وبکم<span class="widont">&nbsp;</span>(webcam)</h3>
+<div class="sourceCode" id="cb10"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb10-1" title="1"><span class="ex">ffmpeg</span> -f x11grab -r 30 -s 1920x1080 -i :0.0  out.mp4</a></code></pre></div>
+<h5 id="توضیح-5">توضیح</h5>
 <ul>
-<li><code>f x11grab-</code> نام فرمتی است که می خواهیم <code>ffmpeg</code> از آن استفاده<span class="widont">&nbsp;</span>کند</li>
-<li><code>r-</code> تعداد فریم ها در ثانیه را مشخص می<span class="widont">&nbsp;</span>کند</li>
-<li><code>s-</code> ابعاد ویدیو را مشخص می کند. این ابعاد باید مساوی یا کمتر از ابعاد صفحه نمایش تان باشد. برای پیدا کردن ابعاد صفحه نمایش از <code>command line</code> می توانید از دستور زیر استفاده<span class="widont">&nbsp;</span>کنید</li>
+<li>
+<code>f x11grab-</code> نام فرمتی است که می خواهیم <code>ffmpeg</code> از آن استفاده<span class="widont">&nbsp;</span>کند
+</li>
+<li>
+<code>r-</code> تعداد فریم ها در ثانیه را مشخص می<span class="widont">&nbsp;</span>کند
+</li>
+<li>
+<code>s-</code> ابعاد ویدیو را مشخص می کند. این ابعاد باید مساوی یا کمتر از ابعاد صفحه نمایش تان باشد. برای پیدا کردن ابعاد صفحه نمایش از <code>command line</code> می توانید از دستور زیر استفاده<span class="widont">&nbsp;</span>کنید
+</li>
 </ul>
-<pre><code class="language-bash">xdpyinfo | grep dimensions</code></pre>
+<div class="sourceCode" id="cb11"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb11-1" title="1"><span class="ex">xdpyinfo</span> <span class="kw">|</span> <span class="fu">grep</span> dimensions</a></code></pre></div>
 <ul>
-<li><code>i-</code> دخولی را مشخص می کند. در لینکس هر صفحه نمایش یک قیمت داده شده است. برای به دست آوردن این قیمت می توانید از دستور زیر استفاده<span class="widont">&nbsp;</span>کنید</li>
+<li>
+<code>i-</code> دخولی را مشخص می کند. در لینکس هر صفحه نمایش یک قیمت داده شده است. برای به دست آوردن این قیمت می توانید از دستور زیر استفاده<span class="widont">&nbsp;</span>کنید
+</li>
 </ul>
-<pre><code class="language-bash"><span class="built_in">echo</span> <span class="variable">$<span class="caps">DISPLAY</span></span></code></pre>
-<p>اگر بیشتر از یک صفحه نمایش دارید قیمت هایی را که به هر صفحه نمایش مختص شده را می توانید با ابزار <code>xrandr</code> به دست<span class="widont">&nbsp;</span>بیاورید. </p>
-<h3 id="-">ضبط صدا از<span class="widont">&nbsp;</span>مایکروفون</h3>
-<pre><code class="language-bash">ffmpeg -f pulse -i default out.aac</code></pre>
-<h4 id="-">توضیح</h4>
+<div class="sourceCode" id="cb12"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb12-1" title="1"><span class="bu">echo</span> <span class="va">$<span class="caps">DISPLAY</span></span></a></code></pre></div>
+<p>اگر بیشتر از یک صفحه نمایش دارید قیمت هایی را که به هر صفحه نمایش مختص شده را می توانید با ابزار <code>xrandr</code> به دست<span class="widont">&nbsp;</span>بیاورید.</p>
+<h3 id="ضبط-صدا-از-مایکروفون">ضبط صدا از<span class="widont">&nbsp;</span>مایکروفون</h3>
+<div class="sourceCode" id="cb13"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb13-1" title="1"><span class="ex">ffmpeg</span> -f pulse -i default out.aac</a></code></pre></div>
+<h5 id="توضیح-6">توضیح</h5>
 <ul>
-<li><code>f-</code> نام فرمتی است که برای ضبط استفاده می کنید. برای مشاهده لیست فرمت هایی که روی سیستم تان نصب شده از <code>ffmpeg -formats</code> استفاده کنید.</li>
-<li><code>i-</code> نام دخولی است. در اینجا دخولی پیش فرض <code>default</code> سیستم را انتخاب کرده ایم، یعنی مایکروفون<span class="widont">&nbsp;</span>تان.</li>
+<li>
+<code>f-</code> نام فرمتی است که برای ضبط استفاده می کنید. برای مشاهده لیست فرمت هایی که روی سیستم تان نصب شده از <code>ffmpeg -formats</code> استفاده کنید.
+</li>
+<li>
+<code>i-</code> نام دخولی است. در اینجا دخولی پیش فرض <code>default</code> سیستم را انتخاب کرده ایم، یعنی مایکروفون<span class="widont">&nbsp;</span>تان.
+</li>
 </ul>
-<hr>
-<h3 id="-">جمع بندی:‌ ضبط ویدیو از وبکم و صفحه نمایش و صدا از<span class="widont">&nbsp;</span>مایکروفون</h3>
-<pre><code class="language-bash"><span class="comment"># play from the webcam</span>
-ffplay -f video4linux2 -i /dev/video0 -video_size 320x240 -fflags nobuffer
-<span class="comment"># record from the screen</span>
-ffmpeg -f pulse -ac 2 -i default -f x11grab -r 30 -s 1920x1080 -i :0.0 -vcodec libx264 -preset ultrafast out.mp4</code></pre>
+<hr />
+<h3 id="جمع-بندی-ضبط-ویدیو-از-وبکم-و-صفحه-نمایش-و-صدا-از-مایکروفون">جمع بندی:‌ ضبط ویدیو از وبکم و صفحه نمایش و صدا از<span class="widont">&nbsp;</span>مایکروفون</h3>
+<div class="sourceCode" id="cb14"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb14-1" title="1"><span class="co"># play from the webcam</span></a>
+<a class="sourceLine" id="cb14-2" title="2"><span class="ex">ffplay</span> -f video4linux2 -i /dev/video0 -video_size 320x240 -fflags nobuffer</a>
+<a class="sourceLine" id="cb14-3" title="3"><span class="co"># record from the screen</span></a>
+<a class="sourceLine" id="cb14-4" title="4"><span class="ex">ffmpeg</span> -f pulse -ac 2 -i default -f x11grab -r 30 -s 1920x1080 -i :0.0 -vcodec libx264 -preset ultrafast out.mp4</a></code></pre></div>
 <p>توجه داشته باشید که دو دستور بالا را باید در دو <code>shell</code> جداگانه اجرا<span class="widont">&nbsp;</span>کنید.</p>
-<p><img src="/articles/ffmpeg-rocks/capture.jpg" alt="Screen Capture"></p>
-<hr>
-<h3 id="-">منابع</h3>
+<figure>
+<img src="/articles/ffmpeg-rocks/capture.jpg" alt="Screen Capture" /><figcaption>Screen Capture</figcaption>
+</figure>
+<h3 id="منابع">منابع</h3>
 <div class="sources">
-
-<p>  <a href="https://trac.ffmpeg.org/wiki/Capture/ALSA#Recordaudiofromyourmicrophone">https://trac.ffmpeg.org/wiki/Capture/<span class="caps">ALSA</span>#Recordaudiofromyourmicrophone</a>
-  <a href="https://stackoverflow.com/a/22082953/2139684">https://stackoverflow.com/a/22082953/2139684</a> 
-  <a href="https://ffmpeg.org/ffmpeg.html">https://ffmpeg.org/ffmpeg.html</a></p>
+<p><a href="https://trac.ffmpeg.org/wiki/Capture/ALSA#Recordaudiofromyourmicrophone">https://trac.ffmpeg.org/wiki/Capture/<span class="caps">ALSA</span>#Recordaudiofromyourmicrophone</a> <a href="https://stackoverflow.com/a/22082953/2139684">https://stackoverflow.com/a/22082953/2139684</a> <a href="https://ffmpeg.org/ffmpeg.html">https://ffmpeg.org/ffmpeg.html</a></p>
 </div>
+</body>
+</html>
 </section>
         </article>
       </div>
@@ -170,7 +351,35 @@ ffmpeg -f pulse -ac 2 -i default -f x11grab -r 30 -s 1920x1080 -i :0.0 -vcodec l
             (d.head || d.body).appendChild(s);
           })();
         </script>
-        <section class="about"><p>This blog was made using Wintersmith.</p>
+        <section class="about"><!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Page Title</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <style>
+    .task-list-item {
+      list-style-type: none;
+    }
+    .task-list-item-checkbox {
+      margin-left: -1.6em;
+    }
+  </style>
+</head>
+<body>
+<p>This blog was made using Wintersmith.</p>
+</body>
+</html>
 
         </section>
         <section class="copy">
