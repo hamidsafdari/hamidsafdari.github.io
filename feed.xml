@@ -1,33 +1,17 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Brain Offloaded</title>
-    <atom:link href="https://hamidsafdari.github.io/feed.xml" rel="self" type="application/rss+xml"></atom:link>
-    <link>https://hamidsafdari.github.io</link>
-    <description></description>
-    <pubDate>Sat, 09 Feb 2019 04:30:00 +0530</pubDate>
-    <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
-    <language>en</language>
-    <item>
-      <title>اهمیت استفاده از VCS</title>
-      <link>https://hamidsafdari.github.io/articles/vcs-importance/</link>
-      <pubDate>Sat, 09 Feb 2019 04:30:00 +0530</pubDate>
-      <guid isPermaLink="true">https://hamidsafdari.github.io/articles/vcs-importance/</guid>
-      <author>Hamid Safdari</author>
-      <description>&lt;!DOCTYPE html&gt;
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brain Offloaded</title><atom:link href="https://hamidsafdari.github.io/feed.xml" rel="self" type="application/rss+xml"></atom:link><link>https://hamidsafdari.github.io</link><description></description><pubDate>Sat, 09 Feb 2019 04:30:00 +0530</pubDate><generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator><language>en</language><item><title>اهمیت استفاده از VCS</title><link>https://hamidsafdari.github.io/articles/vcs-importance/</link><pubDate>Sat, 09 Feb 2019 04:30:00 +0530</pubDate><guid isPermaLink="true">https://hamidsafdari.github.io/articles/vcs-importance/</guid><author>Hamid Safdari</author><description>&lt;!DOCTYPE html&gt;
 &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;&quot; xml:lang=&quot;&quot;&gt;
 &lt;head&gt;
   &lt;meta charset=&quot;utf-8&quot; /&gt;
   &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
   &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=yes&quot; /&gt;
-  &lt;title&gt;Page Title&lt;/title&gt;
-  &lt;style type=&quot;text/css&quot;&gt;
+  &lt;title&gt;&quot;Page Title&quot;&lt;/title&gt;
+  &lt;style&gt;
       code{white-space: pre-wrap;}
       span.smallcaps{font-variant: small-caps;}
       span.underline{text-decoration: underline;}
       div.column{display: inline-block; vertical-align: top; width: 50%;}
   &lt;/style&gt;
-  &lt;style type=&quot;text/css&quot;&gt;
+  &lt;style&gt;
 a.sourceLine { display: inline-block; line-height: 1.25; }
 a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
 a.sourceLine:empty { height: 1.2em; }
@@ -356,28 +340,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 &lt;p&gt;در این نوشته فقط با چند دستور ابتدایی کار با &lt;code&gt;git&lt;/code&gt; آشنا شدیم. در نوشته‌های بعد با ترفندهای کارآمدتر و پیشرفته تری آشنا خواهیم شد. مثلاً اینکه چطور از یک &lt;code&gt;branch&lt;/code&gt; فقط یک فایل را بیرون بکشیم و یا چطور از یک &lt;code&gt;commit&lt;/code&gt; مشخص یک &lt;code&gt;branch&lt;/code&gt; ایجاد کنیم.&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</description>
-    </item>
-    <item>
-      <title>لینکس،‌ بهشت مالتی میدیا: ffmpeg</title>
-      <link>https://hamidsafdari.github.io/articles/ffmpeg-rocks/</link>
-      <pubDate>Thu, 24 Jan 2019 04:30:00 +0530</pubDate>
-      <guid isPermaLink="true">https://hamidsafdari.github.io/articles/ffmpeg-rocks/</guid>
-      <author>Hamid Safdari</author>
-      <description>&lt;!DOCTYPE html&gt;
+</description></item><item><title>لینکس،‌ بهشت مالتی میدیا: ffmpeg</title><link>https://hamidsafdari.github.io/articles/ffmpeg-rocks/</link><pubDate>Thu, 24 Jan 2019 04:30:00 +0530</pubDate><guid isPermaLink="true">https://hamidsafdari.github.io/articles/ffmpeg-rocks/</guid><author>Hamid Safdari</author><description>&lt;!DOCTYPE html&gt;
 &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;&quot; xml:lang=&quot;&quot;&gt;
 &lt;head&gt;
   &lt;meta charset=&quot;utf-8&quot; /&gt;
   &lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;
   &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=yes&quot; /&gt;
-  &lt;title&gt;Page Title&lt;/title&gt;
-  &lt;style type=&quot;text/css&quot;&gt;
+  &lt;title&gt;&quot;Page Title&quot;&lt;/title&gt;
+  &lt;style&gt;
       code{white-space: pre-wrap;}
       span.smallcaps{font-variant: small-caps;}
       span.underline{text-decoration: underline;}
       div.column{display: inline-block; vertical-align: top; width: 50%;}
   &lt;/style&gt;
-  &lt;style type=&quot;text/css&quot;&gt;
+  &lt;style&gt;
 a.sourceLine { display: inline-block; line-height: 1.25; }
 a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
 a.sourceLine:empty { height: 1.2em; }
@@ -654,7 +630,4 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 &lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</description>
-    </item>
-  </channel>
-</rss>
+</description></item></channel></rss>

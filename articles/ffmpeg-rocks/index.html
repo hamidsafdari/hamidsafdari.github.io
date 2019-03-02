@@ -1,57 +1,31 @@
-<!DOCTYPE html>
-<html lang="fa">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width">
-    <title>لینکس،‌ بهشت مالتی میدیا: ffmpeg - Brain Offloaded
-    </title>
-    <link rel="alternate" href="https://hamidsafdari.github.io/feed.xml" type="application/rss+xml" title="">
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Anonymous+Pro:400,700,400italic,700italic|Merriweather:400,700,300">
-    <link rel="stylesheet" href="/css/main.css">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132837172-1"></script>
-    <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-132837172-1');
-    </script>
-  </head>
-  <body class="article-detail">
-    <header class="header">
-      <div class="content-wrap">
-        <h1>لینکس،‌ بهشت مالتی میدیا: ffmpeg</h1>
-        <p class="author"><span class="author"><a href="mailto:hamidsafdari22@gmail.com">Hamid Safdari</a></span>
-        </p>
-        <div class="field is-grouped is-grouped-multiline tag-container">
-          <div class="control">
-            <div class="tags has-addons"><a class="tag is-link" href="/archive.html#tags=linux">linux</a></div>
-          </div>
-          <div class="control">
-            <div class="tags has-addons"><a class="tag is-link" href="/archive.html#tags= ffmpeg">ffmpeg</a></div>
-          </div>
-          <div class="control">
-            <div class="tags has-addons"><a class="tag is-link" href="/archive.html#tags= persian">persian</a></div>
-          </div>
-          <div class="control">
-            <div class="tags has-addons"><a class="tag is-link" href="/archive.html#tags= multimedia">multimedia</a></div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <div id="content">
-      <div class="content-wrap">
-        <article class="article">
-          <section class="content"><!DOCTYPE html>
+<!DOCTYPE html><html lang="fa"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="viewport" content="width=device-width"><title>لینکس،‌ بهشت مالتی میدیا: ffmpeg - Brain Offloaded</title><link rel="alternate" href="https://hamidsafdari.github.io/feed.xml" type="application/rss+xml" title=""><link rel="stylesheet" href="/css/main.css"><link rel="preload" as="style" onload="this.rel = &quot;stylesheet&quot;" href="/css/fonts.css"><link rel="preload" as="style" onload="this.rel = &quot;stylesheet&quot;" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-132837172-1"></script><script>window.onscroll = function() {
+  const maxTop = 20;
+  const header = document.querySelector('#main-content header.header');
+  if (document.body.scrollTop >= maxTop || document.documentElement.scrollTop >= maxTop || window.pageYOffset >= maxTop) {
+    header.className = 'header short-navbar';
+  } else {
+    header.className = 'header';
+  }
+};</script><script>if(!location.href.match(/^http\:\/\/localhost\S*/)) {
+  window.dataLayer = window.dataLayer || []; 
+  function gtag(){dataLayer.push(arguments);} 
+  gtag('js', new Date()); 
+  gtag('config', 'UA-132837172-1');
+}
+</script></head><body class="article-detail"><div id="profile"><div class="content"><div class="profile-pic"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAAAAABVicqIAAAACXBIWXMAAA50AAAO dAFrJLPWAAATXElEQVRo3pV6SY8laZbVOfd+n5m99/y5e0wekRk5dhKZNXQXVAsW jEJCbPgPiH/AT2CD2AELVqwAiSUSiBYFGxrRJWrobnVTWXNlVVZVZlZmRGREePj0 BjP7vntYmHtEZIRnVeKL54P0/Nidzj333sd7AERLDkAEEI8/PDYTDJBDAEjVzYMH 7/1w6wF4UKJS99rvv73nJChKFGgCCUJWXSQuvm6mFDKEnvyFNt952AQIgALAIOp7 3/pgKLBKocgDgOIX77/1998KtzAAAoDpBzIIiNMzA0BKRbxAnb41C0aiML0DVWXz kz85HMMsSLgt0tjHOmpKv3r01a8fNKbzxxHPX0SBmt4OAIkWoGATihC0btEjznFV Tx6sfvBebwCGID3v4mywarsDZoofvPv233kZIExAwABCNInnONO/PalBiPbUhTj5 xeMGAino5Nfv3j8ESpFGyw66mh0l9Ffa4+rb/e5s9vde7+hWfHpsAwUYGDAAFHkj wRB8JkpgIAEQCeGj//PzbUQECpETQtVajZth2Rw76tZnaW/9jdfffntRbXIVocmM yabzmFAm4hkQVBhFsmJ87zufeHM6wJw0Q2VYXclSy9Ivq/LinpZp//RXi9sLXiSn SBlESAzKCEsA7Rz6PArjCAv6EId/+d2tcYwkFYBhXlAqM1E3YbWkWNXFNpW+flBv L6fsFSUAUhBQwIJU0hS0p6ZEv400sh795k9/s5EGRtiYHFVEyDJlVO3ordrjq4/7 A8vxqG7f3NOTFGOcJ5cpkKAkPP+VEV7j8bd/eKzoAlHqzFUI18jkBrQD08i1N2rO 5gfLvFRXt5Ot52kMAAGeR1vpBYygp7SpH3y/75VztWocCNAwwhyCD7Lq3oxuNXft R7x27XiDX//1VzpOmS+QAGgSSAgvgETUkgf+7L+uS8m+HUGvMVWQJUT1CuNoTEM3 7Ork9NGwLI+08+iTx3f+2n6eyk8UCFUnIBhfAFEek3H85ibUWjVVSQyjgxlFGoWa Y2Qx6TB8o3bbp6bvy+b+o7hBstJCgAxAAIb6IogjMfCze1XJa/ThgCTQZCFQRnNU C5iGksDsw/0rO6eY2dmv+p05AojpaamY6CxeAKEs5dX/6uHop6wMicaQBSEliUpW rNHYxahBZTEeL9JZPdzE3uvnCaZznOkXe8FdgMcvNtVcUFgKeUoOCUFzWlCjEBZh 7aZm7DbZ1u7pdkSTt2M8YUUJECME2CWWsP7mJDeqkCTUIEFaStQIBqQ61PAy9Dmi LZvYYjx5KR637Tw/qFUCYA4ogIBH2IuBp6kcRVNqEAHzGhTNUYtBcgakFAHCM1jX BsV2v59db2/ZUd7rCMYTrxhDl7gLRB1qilohlUpkFxwqgQioDGMA1aMfLHq4mWUf wxZ1Z+fNd7/36YMRCp3X4wUDvBh4qPSf2NCLqkRJRhlCVMgq3FHhIWhgm+vQ+Ijc ue7x1vaPjnaz42Au8IKnBAP5giUBxLpsa0hVJErAok61W6IOIalMvaYM47Yiom7H 9ebNV1Zn28K7Z/0YiqgxdYhaopQXLDGZmsQi0qtDrOGER6VCAgstWH0+llLDk1cU ulLX/vz9s6S92i6zeN7uaaCQL6l4MMdGFQgSBguZFdWYRAmBiKxh1oyuUpvkiyqr 3Pv1X/RAu31rZvQQOBGYAeSLIIDS6VZyCWaoMlRJgmCVmNqDyjaZ3GibaJS7q3+w /uMTz1gvu6P9KwEDDeJEj/AXQShaBchiHsVDVAUpsVCc2qtZrYhINO/Szmx5Fe+v jWH7y9npqCnShGAIj8uoXpXzvSOHSMGrSFRSYVYJggSqNaNBGllly51Xrn38gwej 2Wy++74dDFOrRcAw+fsSd7EMt3abHgIlhCGAIKiJHwyQLTCg3Sqj9EV19vHR0UCm rMM3b45jNJM/AJIweVxiSaDbd596dCAgswCsMskIExRjkdSEAaqbct8xwtz6enU3 5jdTdU4MRjODrF4SeHN7qZpkAHw8twFwWpBmFmRxUibbVM91oKxkMOZ7L7/KtHDI EC7A3EDhchC/GWQ14anAEAzKlIsmOEkoE5ZilIWsku3e3rVN37+SwwATzEhA4CWB B2mv5AJJAE0XDcBIp6hqZpKbEOz6KgtTmDM37I7ZZpsEPWHndKJ0WZ1Irx98JAvi GWlJupulwMCUrZrC64apGpzhJMm9erK4PYPr4lmniqjNJSBOy3/jIyNQLcCQC6Sb O42GJIYlS5XjYgThARLMKRV1Nr5hQQOgC3Ute5EgJx74B6+CFlQtF33dU/JkdMuu gCxUFMizLiea5+zLWWGHa7PsBoB27gUJdmnFw658/TdWz7WTQaB70zjgJovzbAMJ JIsIeJg37Jr+1YPWKOCCUSZuuSzw0PqbH3ebWkEQosLobdt6oZGAkaNzNBG5sb5E SpW5S8v2q2/tGE3xJCsFGHFJMYL27rew3NKiJFYK5rCczWZieMgddLPBLVmrxX5r ca/F/vV27/d23Aj4EzVB2OWWwPiz1Wx5PEiESGNwNm8IhTsYtUscgJRT7rrlzQZ5 vt5o9+b+tSs7pkkN8zMS+zJ3WTnM5vt9FYLWJFjborqp1JzInVlXbKxMvrxid66u 1FzdfvLpzTs7S7sYSc/dxc8HAdOXH6WhSTTRFjtNLdiM1RtvYA5Zu0BfBd2Y7165 tfKd2e8N732yvJUk+6wJvwWE6r78XVhygLbcS+NqrMKIVTN3uNgPqR9g0e7sm/q7 mfvrm4tHLyXCMM1spguemJjvEplK6qA7erzZKpor+746qggZGeOx57Ezyw+sFm+b x6XunBwP9v03/mrztZcwjT3PBmQari7JLkG0NLt7tilIN3dtLG20AlX6oYyVY2hz fV77tm6PPyjwIb21Pl7t/k174p1nh1xCwKXZxZgn0amdK1b6NAtAgWYWYyn9QCva G9fjKsqm1Ladn16fb2Y3CAbtfJzTRQoxLrVkaiit0Wu+1tXaBoftWAoitZ5yOxYl t3kfaV4zct6/9eqXmuMxMuCAhAv5CBASlC4ZHSbNvWftYLZnSqrbTV92V2vWeRly ajJn3eLN/nDT1zTEcNrMH7x2Y5ueVdPPsCAV/DzuupGW8zzOvZDVmmHMbV/3bqxO R7eZ5/m1P9CfH2/L6qw2X9FPNrNXy0WHE54Y8iT246WWeH3LI8+32cKaaOtY6+p6 bc429JyzNe3+O/fP+lWz3GD+D+9851e+H7jMkiAExuPLuAvG27c/sKaptAREtIPN xjEiyxqgaWa7B+XK/ehz9q+9dvCPHi+urSfBGPFsdunCrsssAb37u/eG2dZNQdGV S0OvijBPnpuUdOP3z0ppdvcPPjp4/S1Vr/acn34HdwG09M7+8ejTJo5Z8uyqEUiJ 1rQS9r62898OI5st5k1TRl00qC8O4gO6L/35tF4SLVgVDgat8SKQzr033mq/cbq8 +eo1FibjpA0+B8Qu/6s3f2t31VcpFGDQEpjb3CV4a2Ag7c0P/vDWcrFcoMhiWjT9 f7lLgvb/8a9+9ssQKkejhEYhMxgjGZnNtO1fil2ursuwoZ7dY34BS2gAzPbuHGAc hqIYijhtYiQRhBnBmsd16loqIVb6fDMutYRmBeaO1BaoYswUERIRckVyCwaizhXr ru02G2kL6OnQ+wVALFHDZl3HzVAZoeQgyEpV1mqJEmtBOTnJPmyaJfvCclEUXwCE AmirP/2fPzqKrlXrRoLnnFerggkKhMYREQ8r6moW3X5/IsD0+UFJzxU77Xv//OPa j2z2mjJP5oFKCBG1QogsEXVY1ahpPYKus13fXCIePt8SGL/1Lx8yNgFWVkkgKmLa 4wCakxK4PSoV+5tNcnNtUaadML9ACicD48/+9YO8Oq1GWlV1mCskCpXg0GRHccf6 0+2Ov7GzGpUbli34OfX2AkjKVrff/mereV2NLrgVjA0QClABhlspY3UAtTy830R+ +7gkc8R4PqH9bncx+eE3/92P1dXjlEc3nnjqqoEFViAqOdr1I4c3rfnJh3XdfqV8 fxdMZVr+f6E6OfzP/+F+AeOUM3qpGK3pmlwjWMIIGhKasimeZrM86l66aV8542yO EaTid4IwwD/+Vx9pFDRgp0ARBWFlYw3CgoScikoaS7jdePPa5moT3TsPO6sCA6n+ FmPS+UD4o39aWaa9niQFhFiksqUhANTaW+QotUhQqesf3JrdG7a+lz1M5wvU3x4T 8uifFFMuDAExcXad7dtZpAZgoO+LIUl1JLFC873l/Zc4bG9d6X7pryRNKv5ZNXSJ JeO/PfEkJclDCkGCLSmVbUk5YdwMlbZliQRT1MMbZ0Nf155vHX6jvvm3D0KMz3T3 51mYgP3Rf5qzRtQK0Mu0nUwq8hhUxsKhRB22wxisyCyczdQ/+vT+adH/tu3dP7lb dTEjXmKIkCjg0/8YNilZIqgy8VgpzFuuG2NElAqae4K1i61uv2nH791P+69995fX HpzYN2bvHOx5B8gujUsSTD/+qIIBkIpn1h8BazdOy+bGLJDJVActr778+mtH+ahe XX+nC5zN+X8fpXj54M2rqZKXx0TjvxmDXmWY9kznomkcGzbj6FacaGcpigGObu/G 7p299vqdn9eDb5w0WHO05sd/5er47g+/9Ob19lJLKPvLX1TI2m1MQZrEkrwOM2MX o5foZWDjJhDdbva2WQHXZj96d9kXHu+1+588funhT3Ty/s2v3XQ+l2FEisXqv4xh qkgjSD7dtaqGYO2mbBRgYkARnrb3mtkidrsHu/23h/XxbPfoo27erccPTvzu9tPD P7zjL1oyf+/f/49KBas9szQGIJXRSW834dK0hBmrdxKuPN5rRzTfPLPt+mixe3Z0 7daj9SPG6Sp/+Gj+2guZ7Ef/4vtjEDy/mz4ryZEagBa1UShURSVtN2xefu2gWfff +zFDofnqyiq1LJ+GYuSm7l5vnwdJ/33QNOMVo1UhUgBAOIASbrKu702eYK7M0XZ3 3v7qHLKTnxS3bOPx6RWrfbs1hbi1nbLZBT9bL2krXDAohSfHQBPCypggWOpHujGJ Fl1e7l65wQfjyZ8dClCee94iaj8bSUnLGztjPF8tyaI+2ambwvhUa0YpYQAT1qbR ECFjKuweb+vsFx8Gq9dY9U1J4aNn5aH6cufBQfHn/OXLabk6bVwmSQsKDAJGT6TB tfUSRQWuIc/nPo6//oszBFj7MpScZ7FtN14H7N62I3sjPQ+ymECma900WUrTRsyU mE0Cs/XnR52wRY5xffjTe6wDYZTqiPXsaF6HTfWD6/eG7vU5+FzFT6e0z+p+nhun sp2BEGfoB5oZPMWKw+L+R6B7ODKjaj3e3ik2VswXOu02D68+R8gTlZyPqno6UE67 W6EWBRDRLTpHFQzb6qvv/dRkGRDYGGeN3l9sOETeXQ5D45+s7bOmTBfTaRg2nuOT 5yd2UtWgAJh2iiJdu31luXP3O5uJbxnYWqrrFNwMTWFaDp92u83Rx3eeAzFNivz8 8GwIGSQj2daQoroRVomGfu21V5f6+O4IQkgMgmPk5bEWJ4nRzPxouD4/W/381dln 3JU0BR0AwqDqFgKZoNSoUAZWOrsa3nZNXT+82z2C4GV6k0r1COfpVVLxKGbdcU/7 5K1L3PV0+GGQJEHQvTlBAhH05iBtt96OH/5s/trDs1obAfQCCIgTxTgS1EbzxeE6 79vxZ7tXwtNjowmSiaQRaMwxFjaJVPi1l8qDBw8P05duHD7cVI4umk0fHvDK3AtQ FHYPts1ul+z5zZ2mO6pNS6gIAGZubdPmdKzNMN9pc4maNyeP0jvXl6t+W8usD1ox iCYbZfNjRKHl7uzxrM1u/WeJOD0z05mmJGBEkAnU8tSs36rJs/cf2nhtMW/Otidn SlFTne6aPi1+t5kDNOsfdbmdd7bh853xIiB2USkSZGXti5K6cFWqrPphsb8zN+Lk cVUTjGkvpzCF725Mvq0LHDZt4+529/6t52Ki6ex8Qc+UTNBYvzy7BzC1UGPLWZrN LGI4/XQDsFilSENIoHcPqnuBHtOTq6+b2d0b9pmLXwBGmhP2pBSNgP1w6Tevbk7X Stbazk4Hle3Zw9M6OiocQXOZUdwRoDRyo9w1Nmwj+9FzxRg4n6cI8eKzGgTHvHOw 4TsP1qdi55uly9yPT0oYR3lQEQgyPN34edBqCTOC7FrLOzdfkKm8GBfr0/kUNcUP 7zxs8tfT0dGqWK2cEevHmypnJaVAVRhZX1mNkRKDMNDbbm6Wbj2fXZJBAknGxelD oOzDV8rO6eHLt18dj3oC0niyLUFjPy0UpljOm7tATREm0HyePaX+6MpnQNqNaTrQ h7vOBYsAhAXqkNc/Pbt586XTbcR2WJ8MleDAzDp9OAni1f6IBNeARmnexsihHlWX 1wtz/CrKxfI+eXnmjEXypUdZ+fh0e4bORsR6taoGY6k+6dgapF873oDW9AWEDSkP ljms9vYYT1zm171cjC+pGc55fnpNt47VWR5Oiypjszo9GRTuGggRVAmBV/G4AmiH 0SCfNaVJHaJu7ujpB62Sm08lyKCb4nyVzyBTV7LHtf3Dzcmw0LjdVoKsIojz1hO2 GHrIOAwWlpg5bpIP3hz95tWn/PX/AMPxH1Jj1IoeAAAAAElFTkSuQmCC" alt="profile picture"></div><div class="description"><p>Hello there. I'm Hamid.</p><p>I'm a developer from Afghanistan. I love JavaScript and I've been working as a Java developer for a few years now. I also have a Master's in Computer Science.</p><p>This is my blog and I'm gonna share a few cool stuff with you. If you like what I write please share it with others.</p><p><a href="mailto:hamidsafdari22@gmail.com"><span class="icon"><i class="fas fa-envelope"></i></span></a><a href="https://www.github.com/hamidsafdari"><span class="icon"><i class="fab fa-github"></i></span></a><a href="https://www.github.com/hamidsafdari"><span class="icon"><i class="fab fa-linkedin"></i></span></a><a href="https://www.github.com/hamidsafdari"><span class="icon"><i class="fab fa-facebook"></i></span></a></p></div></div></div><div id="main-content"><header class="header"><div class="content-wrap"><h1>لینکس،‌ بهشت مالتی میدیا: ffmpeg</h1><p class="author"><span class="author"><a href="mailto:hamidsafdari22@gmail.com">Hamid Safdari</a></span><span class="article-date">Jan 24th. 2019</span></p><div class="field is-grouped is-grouped-multiline tag-container"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="/archive.html#tags=linux">linux</a></div></div><div class="control"><div class="tags has-addons"><a class="tag is-link" href="/archive.html#tags=ffmpeg">ffmpeg</a></div></div><div class="control"><div class="tags has-addons"><a class="tag is-link" href="/archive.html#tags=persian">persian</a></div></div><div class="control"><div class="tags has-addons"><a class="tag is-link" href="/archive.html#tags=multimedia">multimedia</a></div></div></div></div></header><div id="content"><div class="content-wrap"><article class="article"><section class="content"><!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Page Title</title>
-  <style type="text/css">
+  <title>"Page Title"</title>
+  <style>
       code{white-space: pre-wrap;}
       span.smallcaps{font-variant: small-caps;}
       span.underline{text-decoration: underline;}
       div.column{display: inline-block; vertical-align: top; width: 50%;}
   </style>
-  <style type="text/css">
+  <style>
 a.sourceLine { display: inline-block; line-height: 1.25; }
 a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
 a.sourceLine:empty { height: 1.2em; }
@@ -328,64 +302,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </body>
 </html>
-</section>
-        </article>
-      </div>
-    </div>
-    <footer>
-      <div class="content-wrap">
-        <div class="nav"><a href="/">&laquo; All Posts</a></div>
-        <div id="disqus_thread"></div>
-        <script>
-          /**
-          *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-          *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-          var disqus_config = function () {
-            this.page.url = location.href;  // Replace PAGE_URL with your page's canonical URL variable
-            this.page.identifier = location.href; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-          };
-          (function() { // DON'T EDIT BELOW THIS LINE
-            var d = document, s = d.createElement('script');
-            s.src = 'https://hamidsafdari-github-io.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-          })();
-        </script>
-        <section class="about"><!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Page Title</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
-  <style>
-    .task-list-item {
-      list-style-type: none;
-    }
-    .task-list-item-checkbox {
-      margin-left: -1.6em;
-    }
-  </style>
-</head>
-<body>
-<p>This blog was made using Wintersmith.</p>
-</body>
-</html>
-
-        </section>
-        <section class="copy">
-          <p>&copy; 2019 Hamid Safdari &mdash; powered by&nbsp;<a href="https://github.com/jnordberg/wintersmith">Wintersmith</a></p>
-        </section>
-      </div>
-    </footer>
-  </body>
-</html>
+</section></article></div></div><footer><div class="content-wrap"><div class="nav"><a href="/">&laquo; All Posts</a></div><div id="disqus_thread"></div><script>if(!location.href.match(/^http\:\/\/localhost\S*/)) {
+  /**
+  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+  var disqus_config = function () {
+    this.page.url = location.href;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = location.href; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+  };
+  (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://hamidsafdari-github-io.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+}</script><section class="copy"><p>&copy; 2019 Hamid Safdari &mdash; powered by&nbsp;<a href="https://github.com/jnordberg/wintersmith">Wintersmith</a></p></section></div></footer></div></body></html>
